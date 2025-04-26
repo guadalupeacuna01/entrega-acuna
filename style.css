@@ -131,19 +131,10 @@ a {
 }
 
 /* Footer */
-footer {
-    background-color: rgb(240, 233, 233);
-}
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-footer a {
-    color: #4ea674;
-}
-.pie-redes {
-    padding-top: 10px;
+.footer-contenedor {
+    width: 100%;
+    margin-top: 25px;
+    margin-top: 10px;
 }
 
 
