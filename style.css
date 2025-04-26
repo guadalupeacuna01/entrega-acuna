@@ -134,11 +134,34 @@ h3 {
     color: black;
 }
 
+.articulos-inicio h4 {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+}
+.articulos-inicio p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.articulos-inicio parrafo-redireccional {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: wavy underline;
+    color: blue;
+}
+
 /* Última seccion quién soy */
 .quien-soy {
     margin-top: 30px;
 }
-h4 {
+h5 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
