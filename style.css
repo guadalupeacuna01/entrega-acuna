@@ -99,22 +99,14 @@ a {
     text-decoration: none;
 }
 
-/* Body articulos principales */
-.articulos-inicio {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
 /* Body foto portada */
-
 .portada h2 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: black;
     margin: 50px 0px 0px 30px;
 }
 .portada p {
@@ -122,10 +114,19 @@ a {
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
-    color: white;
+    color: black;
     margin: 20px 0px 0px 30px
 }
 .portada img {
+    margin-top: 30px;
+}
+/* Artiuclos del index */
+.articulos-inicio img {
+    width: 40%;
+    height: auto}
+
+/* Última seccion quién soy */
+.quien-soy {
     margin-top: 30px;
 }
 
