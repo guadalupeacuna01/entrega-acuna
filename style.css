@@ -79,9 +79,6 @@ h1 {
     margin: 0;
 }
 
-
-
-
 /* Barra de navegación */
 nav ul {
     list-style: none;
@@ -102,6 +99,36 @@ a {
     text-decoration: none;
 }
 
+/* Body articulos principales */
+.articulos-inicio {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+/* Body foto portada */
+
+.portada h2 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 50px 0px 0px 30px;
+}
+.portada p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    margin: 20px 0px 0px 30px
+}
+.portada img {
+    margin-top: 30px;
+}
+
 /* Footer */
 footer {
     background-color: rgb(240, 233, 233);
@@ -117,14 +144,5 @@ footer a {
 .pie-redes {
     padding-top: 10px;
 }
-/* sacar esto para que las img de redes queden bien
-img {
-    width: 18px;
-    height: auto;
-}*/
 
-.articulos-inicio {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
+
