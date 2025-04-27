@@ -26,7 +26,7 @@
                 <div class="icono-australia">
                     <img src="../assets/img/icono-australia.png" width="80px" height="80px"  alt="Icono del mapa de Autralia">
                 </div>
-                <div class="titulo contacto">
+                <div class="titulo">
                     <h1 class="text-black">POR AUSTRALIA</h1>
                 </div>
                 <div class="menu-contenedor">
@@ -55,33 +55,33 @@
 
     <main>
         <div class="portada-contacto">
-            <h2 class="text-center">Hola! Soy Lupita</h2>
+            <h2 class="text-center m-5">Hola! Soy Lupita</h2>
             <img src="../assets/img/instagram.png" width="18px" height="18px" alt="Instagram">
             <img src="../assets/img/tik-tok.png" width="18px" height="18px" alt="TikTok">
         </div>
         <section class="mi-historia">
-            <img src="../assets/img/mi-foto.jpeg" alt="Foto de Lupita" class="rounded-start-pill w-25">
+            <img src="../assets/img/mi-foto.jpeg" alt="Foto de Lupita" class="rounded-start-pill mi-foto">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit hic cupiditate exercitationem pariatur porro nemo commodi, culpa eligendi dolor cum accusantium, officiis libero reprehenderit ipsum ullam quod. Vel, maiores architecto.</p>
         </section>
 
         <section>
-            <h3>Contactame</h3>
-        
-            <form action="" method="post">
-
-                <label for="nombre">Tu nombre</label>
-                <input type="text" name="nombre" id="nombre">
-
-                <label for="email">Tu email</label>
-                <input type="email" name="email" id="email">
-
-                <label for="mensaje">Tu mensaje</label>
-                <textarea name="" id="mensaje">Tu mensaje</textarea>
-
-                <input type="submit" value="Enviar" id="enviar">
-            </form>
-            
-
+            <div class="contacto-contenedor">
+                <h3 class="h3-contacto">Contactame</h3>
+                <div class="email-contenedor">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Tu nombre</label>
+                        <input type="text" aria-label="First name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Tu email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Dejame tu mensaje aca</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

@@ -56,6 +56,8 @@ body {
     justify-content: center;
     gap: 2rem;
     padding: 1rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 .header-inicio .barra-navegacion {
     border-top: 1px solid black;
@@ -172,9 +174,6 @@ h3 {
     background-color: lightgrey;
     color: black;
 }
-.quien-soy {
-    margin-top: 30px;
-}
 h5 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
@@ -197,9 +196,25 @@ h5 {
 .mi-historia {
     display: flex;
     gap: 30px;
-    margin: 30px 150px 0px 150px;
+    margin: 10px 200px 50px 200px;
     align-items: center;
 }
+.email-contenedor {
+    margin: 10px 200px 30px 200px;
+    font-size: 1.5rem;
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contacto-contenedor h3 {
+    margin-left: 198px;
+}
+.contacto-contenedor {
+    background-color: lightgrey;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+    
 /* Footer */
 .footer-contenedor {
     width: 100%;
