@@ -11,7 +11,7 @@ header {
     color: rgb(32, 31, 31);
 }
 body {
-    background-color: #fafaf8;
+    background-color: #fcfdfd;
 }
 /*
 .titulo-menu {
@@ -44,8 +44,7 @@ body {
     padding: 1rem;
 }
 .header-inicio {
-    background-color: #F0D9B5;
-    color: #493f34;
+    color: black
 }
 .menu-contenedor {
     display: flex;
@@ -59,8 +58,8 @@ body {
     padding: 1rem 0;
 }
 .header-inicio .barra-navegacion {
-    border-top: 1px solid #493f34;
-    border-bottom: 1px solid #493f34;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
     
 h1 {
@@ -112,7 +111,8 @@ a {
     color: #493f34;
 }
 
-/* Body foto portada pag inicio*/
+/* estilos generales 
+h2*/
 h2 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
@@ -122,6 +122,10 @@ h2 {
     color: black;
     margin: 50px 0px 0px 30px;
 }
+
+/* Página Index
+Body foto portada pág Index */
+
 .portada p {
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
@@ -135,12 +139,6 @@ h2 {
     height: 350px;
     object-fit: cover;
 }
-
-/* Artiuclos del index */
-.articulos-inicio img {
-    width: 40%;
-    height: auto
-}
 h3 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
@@ -149,7 +147,6 @@ h3 {
     text-transform: uppercase;
     color: black;
 }
-
 .articulos-inicio h4 {
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
@@ -171,8 +168,10 @@ h3 {
     font-style: normal;
     text-decoration: underline;
 }
-
-/* Última seccion quién soy */
+.lastsection-inicio {
+    background-color: lightgrey;
+    color: black;
+}
 .quien-soy {
     margin-top: 30px;
 }
@@ -182,6 +181,16 @@ h5 {
     font-style: normal;
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+.mi-foto {
+    width: 200px;
+    height: 200px;
+}
+.mi-historia-inicio{
+    display: flex;
+    gap: 30px;
+    margin: 20px 300px 50px 300px;
+    align-items: center;
 }
 
 /*Página contacto*/
@@ -198,10 +207,9 @@ h5 {
     margin-top: 10px;
 }
 .footer-inicio .barra-navegacion {
-    background-color: #F0D9B5;
-    color: #493f34;
-    border-top: 1px solid #493f34;
-    border-bottom: 1px solid #493f34;
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 
