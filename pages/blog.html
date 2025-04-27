@@ -4,76 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | De mochila por Oz</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=Francois+One&family=Special+Gothic&display=swap" rel="stylesheet">
 </head>
-
-<header>
-    <h1>De mochila por Oz</h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./guia.html">Guía de mochilera</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="./fotos.html">Galería de fotos</a></li>
-            <li><a href="./contacto.html">Contactame</a></li>
-        </ul>
-        <form action="">
-            <label for="buscar"><img src="" alt="buscar"></label>
-            <input type="search" name="" id="buscar">
-        </form>
-    </nav>
-</header>
-
 <body>
-    <section>
-        <h2>Mochilera por Oz</h2>
-        <h3>Subtítulo de blog más reciente</h3>
-        <img src="" alt="">
-        <p>Texto del articulo</p>
-    </section>
+    <header>
+        <div class="encabezado-contenedor">
+            <div class="top-bar m-3">
+                <div class="icono-australia">
+                    <img src="../assets/img/icono-australia.png" width="80px" height="80px"  alt="Icono del mapa de Autralia">
+                </div>
+                <div class="titulo">
+                    <h1 class="text-black">POR AUSTRALIA</h1>
+                </div>
+                <div class="menu-contenedor">
+                    <div>Menú</div>
+                    <div class="buscar">
+                            <form action="buscar">
+                                <label for="buscar">Buscar</label>
+                                <input type="search" id="buscar" name="buscar">
+                            </form>
+                    </div>
+                </div>
+            </div>
+            <div class="barra-navegacion">
+                <nav>
+                    <ul> 
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./guia.html">Guía de mochilera</a></li>
+                        <li><a href="#" >Blog de viaje</a></li>
+                        <li><a href="./fotos.html">Galería de fotos</a></li>
+                        <li><a href="../pages/contacto.html">Contactame</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </div>
+    </header>
+    <main>   
+        <section>
+                <h2>Mochilera por Oz</h2>
+                <h3>Subtítulo de blog más reciente</h3>
+                <img src="" alt="">
+                <p>Texto del articulo</p>
+        </section>
 
-    <section>
-        <article>
-            <h4>Subtitulo</h4>
-            <p>Bajada de subtitulo</p>
-            <img src="" alt="">
+        <section>
+                <article>
+                    <h4>Subtitulo</h4>
+                    <p>Bajada de subtitulo</p>
+                    <img src="" alt="">
+                    <img src="" alt="Instagram"><a href=""></a>
+                    <img src="" alt="TikTok"><a href=""></a>
+                </article>
+            
+                <article>
+                    <h3>Subtitulo</h3>
+                    <img src="" alt="Iframe">
+                    <img src="" alt="">
+                    <p>Texto de articulo</p>
+                </article>
+        </section>
+
+        <section>
+                <article>
+                <img src="" alt="">
+                <p>Texto de articulo</p>
+                </article>
+                
+                <article>
+                    <img src="" alt="">
+                    <p>Texto de articulo</p>
+                </article>
+        </section>
+    </main>
+    <footer>
             <img src="" alt="Instagram"><a href=""></a>
             <img src="" alt="TikTok"><a href=""></a>
-        </article>
-    
-        <article>
-            <h3>Subtitulo</h3>
-            <img src="" alt="Iframe">
-            <img src="" alt="">
-            <p>Texto de articulo</p>
-        </article>
-    </section>
-
-    <section>
-        <article>
-        <img src="" alt="">
-        <p>Texto de articulo</p>
-        </article>
-        
-        <article>
-            <img src="" alt="">
-            <p>Texto de articulo</p>
-        </article>
-    </section>
-
-    <footer>
-        <img src="" alt="Instagram"><a href=""></a>
-        <img src="" alt="TikTok"><a href=""></a>
-        <img src="" alt="WhatsApp"><a href=""></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./guia.html">Guía de mochilera</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="./fotos.html">Galería de fotos</a></li>
-                <li><a href="./contacto.html">Contactame</a></li>
-            </ul>
-        </nav>
+            <img src="" alt="WhatsApp"><a href=""></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./guia.html">Guía de mochilera</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./fotos.html">Galería de fotos</a></li>
+                    <li><a href="./contacto.html">Contactame</a></li>
+                </ul>
+            </nav>
     </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
