@@ -13,37 +13,40 @@
 </head>
 <body>
     <header>
-        <div class="encabezado-redes">
+        <!--
+        <div class="encabezado-redes bg-black">
             <img src="../assets/img/instagram.png" width="18px" height="18px" alt="Acceso a Instagram">
             <img src="../assets/img/tik-tok.png" width="18px" height="18px" alt="Acceso a TikTok">
             <img src="../assets/img/facebook.png" width="18px" height="18px" alt="Acceso a facebook">
             <img src="../assets/img/twitter.png" width="18px" height="18px" alt="Acceso a Twitter">
         </div> 
-        <div class="encabezado-contenedor bg-primary-subtle text-primary-emphasis">
+        -->
+        <div class="encabezado-contenedor contacto">
             <div class="top-bar">
-                <div class="icono-australia"><img src="../assets/img/icono-australia.png" width="80px" height="80px"  alt="Icono del mapa de Autralia"></div>
-                <div class="titulo">
-                    <h1>POR AUSTRALIA</h1>
+                <div class="icono-australia">
+                    <img src="../assets/img/icono-australia.png" width="80px" height="80px"  alt="Icono del mapa de Autralia">
+                </div>
+                <div class="titulo contacto">
+                    <h1 class="text-black">POR AUSTRALIA</h1>
                 </div>
                 <div class="menu-contenedor">
-                    <div class="menu">Menú</div>
-                        <div class="buscar">
+                    <div class="menu text-black">Menú</div>
+                    <div class="buscar">
                             <form action="buscar">
-                                <label for="buscar">Buscar</label>
+                                <label for="buscar" class="text-black">Buscar</label>
                                 <input type="search" id="buscar" name="buscar">
                             </form>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="barra-navegacion">
-                <nav class="text-primary-emphasis">
+                <nav>
                     <ul> 
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./guia.html">Guía de mochilera</a></li>
-                        <li><a href="./blog.html">Blog de viaje</a></li>
-                        <li><a href="./fotos.html">Galería de fotos</a></li>
-                        <li><a href="#">Contactame</a></li>
+                        <li><a href="../index.html" class="text-primary-emphasis">Inicio</a></li>
+                        <li><a href="./guia.html" class="text-primary-emphasis">Guía de mochilera</a></li>
+                        <li><a href="./blog.html" class="text-primary-emphasis">Blog de viaje</a></li>
+                        <li><a href="./fotos.html" class="text-primary-emphasis">Galería de fotos</a></li>
+                        <li><a href="#" class="text-primary-emphasis">Contactame</a></li>
                     </ul>
                 </nav>
             </div>  
@@ -51,13 +54,14 @@
     </header>
 
     <main>
-        <h2>Quién soy?</h2>
-        <img src="" alt="Instagram">
-        <img src="" alt="TikTok">
-
-        <section>
-            <img src="" alt="Mi foto">
-            <p>Mi historia</p>
+        <div class="portada-contacto">
+            <h2 class="text-center">Hola! Soy Lupita</h2>
+            <img src="../assets/img/instagram.png" width="18px" height="18px" alt="Instagram">
+            <img src="../assets/img/tik-tok.png" width="18px" height="18px" alt="TikTok">
+        </div>
+        <section class="mi-historia">
+            <img src="../assets/img/mi-foto.jpeg" alt="Mi foto" class="rounded-start-pill w-25">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit hic cupiditate exercitationem pariatur porro nemo commodi, culpa eligendi dolor cum accusantium, officiis libero reprehenderit ipsum ullam quod. Vel, maiores architecto.</p>
         </section>
 
         <section>
@@ -81,9 +85,6 @@
         </section>
     </main>
     <footer>
-        <img src="" alt="Instagram"><a href=""></a>
-        <img src="" alt="TikTok"><a href=""></a>
-        <img src="" alt="WhatsApp"><a href=""></a>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>

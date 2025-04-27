@@ -5,12 +5,12 @@
 html {
     font-size: 62.5%;
 }
-
+/*
 header {
     background-color: white;
     color: rgb(32, 31, 31);
 }
-/*.titulo-menu {
+.titulo-menu {
     font-size: 12px;
     display: flex;
     flex-direction: row;
@@ -22,12 +22,19 @@ header {
 
 /* Linea encabezado para redes*/
 .encabezado-redes {
-    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     padding: 2px;
     justify-content: flex-start;
     gap: 7px;
+}
+.inicio {
+    background-color: white;
+    color: #083d77;
+}
+.contacto {
+    background-color: #EBEBD3;
+    color: #083d77;
 }
 
 /* Encabezado */
@@ -52,6 +59,7 @@ header {
     padding: 1rem 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    color: black;
 }
 h1 {
     font-family: "Boldonse", system-ui;
@@ -92,14 +100,14 @@ nav ul li {
     text-transform: uppercase;
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;;
 }
 a {
     text-decoration: none;
 }
 
 /* Body foto portada */
-.portada h2 {
+h2 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -168,6 +176,13 @@ h5 {
     text-transform: uppercase;
 }
 
+/*Página contacto*/
+.mi-historia {
+    display: flex;
+    gap: 30px;
+    margin: 30px 150px 0px 150px;
+    align-items: center;
+}
 /* Footer */
 .footer-contenedor {
     width: 100%;
