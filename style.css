@@ -216,6 +216,13 @@ h5 {
     padding-top: 15px;
     padding-bottom: 5px;
 }
+.portada-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
     
 /* Página Galeria de fotos */
 .titulo-galeria h3{
