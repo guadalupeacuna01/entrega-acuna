@@ -300,6 +300,14 @@ h5 {
     flex-shrink: 0;
     margin: 10px;
 }
+.galeria-fotos h4 {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+}
 /* Footer */
 .footer-contenedor {
     width: 100%;
