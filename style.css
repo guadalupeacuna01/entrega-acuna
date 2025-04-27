@@ -221,6 +221,9 @@ h5 {
 .seccion-mapa {
     background-color: lightgrey;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin:30px;
 }
 .mapa-enlaces {
     display: flex;
@@ -237,12 +240,65 @@ h5 {
 .mapa-estados {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-   
-    
+    justify-content: center;  
 }
 .mapa-estados ul {
     list-style: none;
+}
+.galeria-fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.grid-xestados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (7, 1.7fr);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "nsw-fotos nsw-fotos nsw-fotos"
+    "qld-fotos qld-fotos qld-fotos"
+    "vic-fotos vic-fotos vic-fotos"
+    "sa-fotos sa-fotos sa-fotos"
+    "nt-fotos nt-fotos nt-fotos"
+    "wa-fotos wa-fotos wa-fotos"
+    "tas-fotos tas-fotos tas-fotos";
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+} 
+.nsw-fotos {
+    grid-area: nsw-fotos;
+}
+.qld-fotos {
+    grid-area: qld-fotos;
+}
+.vic-fotos {
+    grid-area: vic-fotos;
+}
+.sa-fotos {
+    grid-area: sa-fotos;
+}
+.nt-fotos {
+    grid-area: nt-fotos;
+}
+.wa-fotos {
+    grid-area: wa-fotos;
+}
+.tas-fotos {
+    grid-area: tas-fotos;
+}
+.grid-xestados img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    margin: 10px;
 }
 /* Footer */
 .footer-contenedor {
