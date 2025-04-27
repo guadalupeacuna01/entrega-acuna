@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-inicio">
         <!--
         <div class="encabezado-redes inicio">
             <img src="./assets/img/instagram.png" width="18px" height="18px" alt="Acceso a Instagram">
@@ -53,12 +53,11 @@
 
     <main>
         <div class="portada">
-            <div class="card text-bg">
-                <img src="./assets/img/foto-portada-2.jpeg" class="card-img" alt="Foto portada de Sydney">
+            <div class="card text-bg m-5 border-white">
+                <img src="./assets/img/foto-portada-3.png" class="card-img" alt="Foto portada de Sydney">
                 <div class="card-img-overlay">
                     <h2 class="card-title"> Blog de una mochilera</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi beatae dolorum, natus atque rerum ratione mollitia, non expedita enim tempore vel at autem explicabo perspiciatis? Ad, officiis. Exercitationem, iure?</p> 
-                    <p class="card-text"><small>Actualizado hace 3 horas</small></p>
                 </div>
             </div> 
         </div>      
@@ -67,16 +66,17 @@
         <section class="articulos-inicio mx-auto p-5">
             <h3 class="text-center mb-3">- Últimos artículos -</h3>
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-          
-            <div class="col">
-                <div class="card h-100 border-white">
-                    <img src="./assets/img/fotos-articulos/picking-uvas.jpeg" class="card-img-top w-100" alt="Foto observando un canguro">
-                    <div class="card-body">
-                    <h4 class="card-title">Título del artículo 1</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint quos possimus saepe dignissimos odit! Mollitia atque soluta sint maxime aut, facilis earum minus vero temporibus eveniet enim, totam molestiae!</p>
-                    <p class="card-text fw-lighter fst-italic text-blue"><small><a href="./pages/blog.html">Ver más...</a></small></p>
-              </div>
-            </div>
+                <div class="col">
+                    <div class="card h-100 border-white">
+                        <img src="./assets/img/fotos-articulos/picking-uvas.jpeg" class="card-img-top w-100 h-90" alt="Foto observando un canguro">
+                        <div class="card-body">
+                        <h4 class="card-title">Título del artículo 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint quos possimus saepe dignissimos odit! Mollitia atque soluta sint maxime aut, facilis earum minus vero temporibus eveniet enim, totam molestiae!</p>
+                        <p class="card-text"><small>(Actualizado hace 3 horas)</small></p>
+                        <p class="card-text fw-lighter fst-italic ver-mas"><a href="./pages/blog.html">Ver más...</a></p>
+                        
+                </div>
+                </div>
           </div>
       
           <div class="col">
@@ -133,11 +133,11 @@
         </section>
     </main>
 
-    <footer>
-         <div class="footer-contenedor barra-navegacion bg-white text-black"> 
+    <footer class="footer-inicio">
+         <div class="footer-contenedor barra-navegacion">
             <nav>
                 <ul>
-                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="./Pages/guia.html">Guía de mochilera</a></li>
                     <li><a href="./Pages/blog.html">Blog</a></li>
                     <li><a href="./Pages/fotos.html">Galería de fotos</a></li>
