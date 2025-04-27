@@ -308,6 +308,36 @@ h5 {
     color: black;
     text-align: center;
 }
+/*Pag Guia*/
+.articles-guia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.flex-articles img {
+    width:250px;
+    height: auto;
+}
+.articulo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.articulo-reverse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 /* Footer */
 .footer-contenedor {
     width: 100%;
