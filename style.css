@@ -188,8 +188,10 @@ h5 {
 .mi-historia-inicio{
     display: flex;
     gap: 30px;
+    background-color: lightgrey;
     margin: 20px 300px 50px 300px;
     align-items: center;
+   padding: 20px;
 }
 
 /*Página contacto*/
@@ -215,6 +217,8 @@ h5 {
     padding-bottom: 5px;
 }
     
+/* Página Galeria de fotos */
+
 /* Footer */
 .footer-contenedor {
     width: 100%;

@@ -47,10 +47,34 @@
         <h2>Título</h2>
         <p>Bajada de titulo</p>
 
-        <section>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <section class="carrusel-principal">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/fotos-galeria/uluru.jpeg" class="d-block w-100" alt="Foto de Uluru en Northen Territory" style="max-height: 700px; object-fit: contain;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/fotos-galeria/doce-apostoles.jpeg" class="d-block w-100" alt="Foto en los Doce Apostoles en Victoria" style="max-height: 700px; object-fit: contain;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/fotos-galeria/queensland.jpeg" class="d-block w-100" alt="Foto de una playa al norte de Queenlsand" style="max-height: 700px; object-fit: contain;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
         </section>
     
      
