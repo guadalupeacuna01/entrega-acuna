@@ -218,7 +218,32 @@ h5 {
 }
     
 /* Página Galeria de fotos */
-
+.seccion-mapa {
+    background-color: lightgrey;
+    padding: 15px;
+}
+.mapa-enlaces {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+}
+.mapa-enlaces img {
+    width: 50px;
+    height: 50px;
+}
+.mapa-estados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    
+}
+.mapa-estados ul {
+    list-style: none;
+}
 /* Footer */
 .footer-contenedor {
     width: 100%;
