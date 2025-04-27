@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem 0;
+    padding: 1rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -112,7 +112,27 @@ a {
 .header-inicio a{
     color: #493f34;
 }
-
+.link-boton {
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.link-boton:hover,
+.link-boton:focus {
+  background-color: black;
+  color: white;
+}
+.boton-active {
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
 /* estilos generales 
 h2*/
 h2 {
