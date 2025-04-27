@@ -338,6 +338,14 @@ h5 {
     gap: 20px;
 }
 
+/*Pag Blog*/
+.body-blog {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-area: 
+    "body-blog-izquierda body-blog-derecha";
+    gap: 20px;
+}
 /* Footer */
 .footer-contenedor {
     width: 100%;
