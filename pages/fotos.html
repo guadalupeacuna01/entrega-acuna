@@ -14,34 +14,66 @@
     <header>
         <div class="encabezado-contenedor">
             <div class="top-bar m-3">
-                <div class="icono-australia">
-                    <img src="../assets/img/icono-australia.png" width="80px" height="80px"  alt="Icono del mapa de Autralia">
-                </div>
+                <div class="icono-australia"><img src="../assets/img/icono-australia.png" width="80px" height="80px"  alt="Icono del mapa de Autralia"></div>
                 <div class="titulo">
                     <h1>POR AUSTRALIA</h1>
                 </div>
                 <div class="menu-contenedor">
-                    <div class="menu">Menú</div>
+                    <div class="menu nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-negro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item link-boton" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item link-boton" href="./guia.html">Guía de mochilera</a></li>
+                            <li><a class="dropdown-item link-boton" href="./blog.html">Blog de viaje</a></li>
+                            <li><a class="dropdown-item link-boton" href="#">Galería de fotos</a></li>
+                            <li><a class="dropdown-item link-boton" href="./contacto.html">Contactame</a></li>
+                        </ul>
+                    </div>
+                
                     <div class="buscar">
-                            <form action="buscar">
-                                <label for="buscar">Buscar</label>
-                                <input type="search" id="buscar" name="buscar">
-                            </form>
+                        <form action="buscar">
+                            <label for="buscar">Buscar</label>
+                            <input type="search" id="buscar" name="buscar">
+                        </form>
                     </div>
                 </div>
             </div>
             <div class="barra-navegacion">
-                <nav>
-                    <ul> 
-                        <li><a href="../index.html" class="link-boton">Inicio</a></li>
-                        <li><a href="./guia.html" class="link-boton">Guía de mochilera</a></li>
-                        <li><a href="./blog.html" class="link-boton">Blog de viaje</a></li>
-                        <li><a href="#" class="link-boton boton-active text-white">Galería de fotos</a></li>
-                        <li><a href="./contacto.html" class="link-boton">Contactame</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-md navbar-light bg-body">
+                    
+                    <div class="container-fluid">
+                        <div class="d-flex mt-3">
+                            <img src="../assets/img/icono-australia.png" style="width: 20px; height: 20px;" class="d-block d-md-none" alt="Icono del mapa de Autralia">
+                            <h1 class="titulo-mobile d-block d-md-none ms-2">Por Australia</h1>
+                        </div>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto"> 
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link link-boton boton-active text-white">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./guia.html" class="nav-link link-boton">Guía de mochilera</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="./blog.html" class="nav-link link-boton">Blog de viaje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-boton">Galería de fotos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contacto.html" class="nav-link link-boton">Contactame</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 </nav>
-            </div>  
-        </div>
+            </div>
+        </div>   
     </header>
     <main>
         <h2 class="text-center mt-5 mb-3">Mis fotos favoritas de Australia</h2>
