@@ -633,6 +633,44 @@ h5 {
     .galeria-fotos {
         margin: 0px 0px 0px 0px;
     }
-    
-    
-  }
+
+    /* Contacto */
+    .contacto-contenedor {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto-contenedor h3 {
+        font-size: 1.5rem;
+        margin: 10px;
+        padding: 0px;
+    }
+    .email-contenedor {
+        font-size: 1rem;
+        margin: 10px;
+        padding: 0px;
+        width: 90%;
+    }
+    .mi-historia {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        gap: 0px;
+    }
+    .mi-historia img {
+        border-radius: 50% !important;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .mi-historia p {
+        font-size: 1rem;
+        padding: 0px;
+        text-align: justify;
+    }
+}
