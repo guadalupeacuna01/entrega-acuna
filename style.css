@@ -77,6 +77,13 @@ h1 {
     text-transform: uppercase;
     margin: 0;
 }
+.menu-negro {
+    color: black !important;
+}
+.dropdown-toggle::after {
+    border: none !important;
+    content: "" !important;
+}
 .icono-australia {
    align-items: center;
 }
