@@ -270,7 +270,7 @@ h5 {
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     margin: 10px 100px 10px 100px
 }
@@ -377,6 +377,9 @@ h5 {
     align-items: center;
     gap: 20px;
 }
+.card-guia img {
+    height: 400px;
+}
 
 /*Pag Blog*/
 .body-blog {
@@ -418,12 +421,12 @@ h5 {
     object-fit: cover;
    }
    .portada h2{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 0;
    }
    .portada p {
-    font-size: 0.5rem;
+    font-size: 1rem;
     margin-top: 10px;
    }
   .card-img {
@@ -439,8 +442,9 @@ h5 {
     flex-direction: column;
     justify-content: center;
     padding: 1.5rem;
-    height: 40%;
+    height: 60%;
     pointer-events: none;
+    margin-left: -30px;
   }
   
   .card-title {
@@ -467,7 +471,7 @@ h5 {
     margin-bottom: 10px;
 }
     .articulos-inicio p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 
     }
@@ -480,7 +484,7 @@ h5 {
     gap: 10px;
     }
     .mi-historia-inicio p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px;
     text-align: justify;
 
@@ -501,6 +505,55 @@ h5 {
     .card-title {
         margin-top: 0;
     }
-
-}
-    
+/* Guia de mochilera */
+    .hprincipal-guia h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .hprincipal-guia p {
+        font-size: 1.2rem;
+        margin: 2rem;
+        text-align: justify;
+    }
+    .card-guia img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .card-guia h5 {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .card-guia p {
+        font-size: 1rem;
+    }
+    /*
+    .articulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }*/
+    .articulo-reverse,
+    .articulo {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .flex-articles img {
+        width: 100%;
+        max-width: 300px; /* O el tamaño que quieras */
+        height: auto;
+    }
+    .titulo-txt {
+        margin: 1rem; /* Más chico en mobile */
+    }
+    .texto-articulo {
+        font-size: 1rem;
+        margin: 0px;
+        padding: 0;
+        text-align: justify;
+    }
+    .titulo-articulo {
+        line-height: 2;
+    }
+  }
