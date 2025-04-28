@@ -389,6 +389,9 @@ h5 {
     "body-blog-izquierda body-blog-derecha";
     gap: 20px;
 }
+.body-blog-derecha .card {
+    width: 30rem
+}
 /* Footer */
 .footer-contenedor {
     width: 100%;
@@ -421,7 +424,7 @@ h5 {
     object-fit: cover;
    }
    .portada h2{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 0;
    }
@@ -527,12 +530,6 @@ h5 {
     .card-guia p {
         font-size: 1rem;
     }
-    /*
-    .articulo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    }*/
     .articulo-reverse,
     .articulo {
         flex-direction: column-reverse;
@@ -555,5 +552,45 @@ h5 {
     }
     .titulo-articulo {
         line-height: 2;
+    }
+    /*Blog de Viajes */
+    .titulo-blog {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .card-ultimo-articulo img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-ultimo-articulo h5 {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    .card-ultimo-articulo p {
+        text-align: justify;
+    }
+    .body-blog {
+        display: block;
+    }
+    .body-blog img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .body-blog-derecha {
+        margin: 0;
+        padding: 1rem;
+    }
+    .body-blog-derecha .card {
+        width: 100%;
+    }
+    .body-blog-izquierda h5 {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    .body-blog-izquierda p {
+        text-align: justify;
+        font-size: 1rem;
     }
   }
