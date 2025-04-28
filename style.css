@@ -200,6 +200,9 @@ h3 {
     font-style: normal;
     text-decoration: underline;
 }
+.foto-340 {
+    height: 340px;
+}
 .lastsection-inicio {
     background-color: lightgrey;
     color: black;
@@ -404,6 +407,68 @@ h5 {
         display: flex;
         flex-direction: column;
     }
-   
+
+    /* Index */
+   .portada {
+    margin: 0px;
+   }
+   .portada img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   }
+   .portada h2{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+   }
+   .portada p {
+    font-size: 0.5rem;
+    margin-top: 10px;
+   }
+  .card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-img-overlay {
+    top: -70px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    color: #000;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .articulos-inicio h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .articulos-inicio p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
 }
     
