@@ -295,7 +295,7 @@ h5 {
 .grid-xestados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (7, 1.7fr);
+    grid-template-rows: repeat(7, 1.7fr);
     gap: 10px;
     justify-content: center;
     align-content: center;
@@ -593,4 +593,47 @@ h5 {
         text-align: justify;
         font-size: 1rem;
     }
+
+    /* Galeria de fotos */
+    h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 2;
+    }
+    .titulo-galeria h3 {
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 2;
+    }
+    .titulo-galeria p {
+        font-size: 1rem;
+        text-align: justify;
+        margin: 0px 15px 15px 15px;
+    }
+
+    .grid-xestados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1.7fr);
+        grid-template-areas: none;
+        width: 100%;
+        margin-left: 0px;
+        padding: 10px;
+      }
+    .grid-xestados img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+        margin: 0px;
+      }
+    .grid-xestados h4 {
+        display: none;
+      }
+    .grid-xestados > div {
+        display: contents;
+      }
+    .galeria-fotos {
+        margin: 0px 0px 0px 0px;
+    }
+    
+    
   }
