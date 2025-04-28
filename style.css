@@ -433,13 +433,14 @@ h5 {
   }
   
   .card-img-overlay {
-    top: -70px;
-    left: -40px;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
-    height: 100%;
+    padding: 1.5rem;
+    height: 40%;
+    pointer-events: none;
   }
   
   .card-title {
@@ -496,6 +497,9 @@ h5 {
         font-size: 1rem;
         text-align: center;
         margin-top: -15px;
+    }
+    .card-title {
+        margin-top: 0;
     }
 
 }
