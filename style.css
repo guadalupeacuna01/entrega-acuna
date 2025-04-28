@@ -139,6 +139,13 @@ a {
     border: 1px solid black;
     border-radius: 4px;
 }
+.titulo-mobile {
+    display: none; /* OCULTO en desktop */
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
 /* estilos generales 
 h2*/
 h2 {
@@ -391,4 +398,15 @@ h5 {
     border-bottom: 1px solid black;
 }
 
-
+/* Diseño Mobile Responsive */
+@media (max-width: 768px) {
+    .top-bar {
+      display: none;
+    }
+    .barra-navegacion {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+    
