@@ -43,9 +43,6 @@ body {
     align-items: center;
     padding: 1rem;
 }
-.header-inicio {
-   
-}
 .menu-contenedor {
     display: flex;
     flex-direction: column;
