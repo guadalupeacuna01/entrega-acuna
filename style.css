@@ -426,11 +426,11 @@ h5 {
    .portada h2{
     font-size: 1.5rem;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin-bottom: 10px;
    }
    .portada p {
     font-size: 1rem;
-    margin-top: 10px;
+    margin: 0px;
    }
   .card-img {
     width: 100%;
@@ -443,11 +443,10 @@ h5 {
     left: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 1.5rem;
-    height: 60%;
+    height: 140%;
     pointer-events: none;
-    margin-left: -30px;
+    margin-left: 0px;
   }
   
   .card-title {
