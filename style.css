@@ -456,16 +456,22 @@ h5 {
     pointer-events: none;
     margin-left: 0px;
   }
-  
+  .articulos-inicio .card-body {
+    border-bottom: 1px solid lightgray;
+  }
   .card-title {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #000;
   }
-  
   .card-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #000;
+    margin-bottom: 10px;
+  }
+  .articulos-inicio p {
+    font-size: 1rem;
+    text-align: justify;
   }
   h3 {
     font-size: 1rem;
@@ -475,23 +481,15 @@ h5 {
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin-bottom: 10px;
   }
-    .articulos-inicio h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-    .articulos-inicio p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-
-    }
   .mi-historia-inicio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 20px 20px 20px;
-    gap: 10px;
+    margin: 20px 20px 20px 20px;
+    gap: 5px;
     }
     .mi-historia-inicio p {
     font-size: 1.2rem;
@@ -530,7 +528,7 @@ h5 {
         height: auto;
         object-fit: cover;
     }
-    .card-guia h5 {
+    .card-guia .card-body h5 {
         font-size: 1.2rem;
         line-height: 2;
     }
