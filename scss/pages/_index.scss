@@ -67,61 +67,68 @@ h5 {
     height: 200px;
 }
 .mi-historia-inicio {
-    @include mixins.flexbox (center, center, row, 5px);
-    margin: 20px;
+    @include mixins.flexbox (center, center, row, 30px);
+    margin: 20px 300px 50px 300px;
 }
 .mi-historia-inicio p {
-    @include mixins.parrafos (1.2rem, 10px);
+    @include mixins.parrafos (1rem, 0px);
     text-align: justify;
 }
 .mi-historia-inicio img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 .mi-historia-inicio h5 {
-    @include mixins.titulos (1.5rem, -15px 0px 0px 0px);
+    @include mixins.titulos (1.5rem, 0px);
     text-align: center;
 }
 
 // Mobile Responsive
 @media (max-width: 768px) {
+    .portada {
+        margin: 0px;
+    }
+    .portada img {
+        @extend %img-default-mobile;
+       }
+          
     .portada h2 {
-        @include mixins.titulos (1.5rem, 0px 0px 10px 0px);
+        @include mixins.titulos (1.5rem, 10px);
+        line-height: 1.5;
     }
     .portada p {
-        @include mixins.parrafos (2rem, 20px 0px 0px 30px);
-    }
-    .card-img {
-        @extend %img-default-mobile;
+        @include mixins.parrafos (1rem, 0px);
     }
     .card-img-overlay {
         top:0px;
         left:0px;
         @include mixins.flexbox (center, center, column, 1.5rem);
-        height: 140%;
+        height: 80%;
         pointer-events: none;
         margin-left: 0px;
     }
     
-    .articulos-inicio, 
-    .card-body {
+    .articulos-inicio .card-body {
         border-bottom: 1px solid lightgrey;
+        padding: 0px;
     }
-    .card-title {
-        @include cards.title-cards (1.2rem);
+    .articulos-inicio h4 {
+        @include cards.title-cards (1rem);
+        font-size: 1rem;
     }
     .card-text {
         @include cards.text-cards (1rem, 0px 0px 10px 0px)
     }
-    h3 {
+    .articulos-inicio h3 {
         @include mixins.titulos (1rem, 15px 0px 0px 0px);
+        white-space: nowrap;
     }
     .card-img {
         @extend %img-default-mobile;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     
     .mi-historia-inicio {
@@ -129,18 +136,19 @@ h5 {
         margin: 20px;
     }
     .mi-historia-inicio p {
-        @include mixins.parrafos (1.2rem, 10px);
+        @include mixins.parrafos (1rem, 0px);
+        padding: 10px;
         text-align: justify;
     }
     .mi-historia-inicio img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     .mi-historia-inicio h5 {
-        @include mixins.titulos (1.5rem, -15px 0px 0px 0px);
+        @include mixins.titulos (1.2rem, -15px 0px 0px 0px);
         text-align: center;
     }
 
