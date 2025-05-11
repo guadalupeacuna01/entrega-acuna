@@ -12,4 +12,11 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
  }
+
+ // Mobile Responsive
+@media (max-width: 768px) {
+    .footer-contenedor .footer-mobile {
+        @include mixins.flexbox (center, center, row, 0px);
+    }
+}
  
