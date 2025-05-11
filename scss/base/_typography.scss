@@ -5,7 +5,7 @@
     white-space: nowrap;
 }
 h2 {
-    @include mixins.titulos (3rem, 50px 0px 0px 30px);
+    @include mixins.titulos (2rem, 50px 0px 0px 30px);
 }
 h3 {
     @include mixins.titulos (2rem, 0px);

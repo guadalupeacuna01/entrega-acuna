@@ -76,7 +76,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 50px 0px 0px 30px;
   line-height: 1.5;
   color: black;
@@ -130,6 +130,21 @@ p {
 .btn-custom:focus {
   background-color: black;
   color: white;
+}
+
+.ver-mas {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: rgb(34, 33, 33);
+  padding: 0px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.8px;
+}
+.ver-mas:hover, .ver-mas:focus {
+  text-decoration: underline;
 }
 
 .encabezado-contenedor {
@@ -579,14 +594,6 @@ h5 {
   gap: 10px;
 }
 
-.card-ultimo-articulo {
-  max-width: 740px;
-}
-
-.card-ultimo-articulo img {
-  height: 250px;
-}
-
 @media (max-width: 768px) {
   .contacto-contenedor {
     display: flex;
@@ -776,61 +783,53 @@ h5 {
     margin: 0px 0px 0px 0px;
   }
 }
-.body-blog {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-area: "body-blog-izquierda body-blog-derecha";
-  gap: 20px;
-}
-
-.body-blog-derecha .card {
-  width: 30rem;
-}
-
-.titulo-blog {
+.titulo-blog h2 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  margin: 10px;
+  font-size: 2rem;
+  margin: 0px;
   line-height: 1.5;
   color: black;
 }
 
-.card-ultimo-articulo img {
-  height: 200px;
+.card-ultimo-articulo {
+  max-width: 740px;
 }
-
 .card-ultimo-articulo h5 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0px;
   line-height: 1.5;
   color: black;
-  line-height: 2;
 }
-
 .card-ultimo-articulo p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 0px;
   text-align: justify;
+}
+.card-ultimo-articulo img {
+  height: 260px;
 }
 
 .body-blog {
-  display: block;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-area: "body-blog-izquierda body-blog-derecha";
+  gap: 10px;
 }
 
-.body-blog-derecha {
-  margin: 0;
-  padding: 1rem;
+.body-blog-izquierda {
+  grid-area: "body-blog-izquierda";
 }
-
-.body-blog-derecha .card {
-  width: 100%;
-}
-
 .body-blog-izquierda h5 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
@@ -840,20 +839,108 @@ h5 {
   margin: 0px;
   line-height: 1.5;
   color: black;
-  line-height: 2;
 }
-
 .body-blog-izquierda p {
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
   font-size: 1rem;
-  margin: 0px;
-  text-align: justify;
+  margin: 10px 0px 5px 0px;
   text-align: justify;
 }
 
+.body-blog-derecha {
+  grid-area: "body-blog-derecha";
+}
+.body-blog-derecha .card {
+  width: 20rem;
+}
+.body-blog-derecha p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 10px 0px 5px 0px;
+  text-align: justify;
+}
+.body-blog-derecha h3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .titulo-blog {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 10px;
+    line-height: 1.5;
+    color: black;
+  }
+  .card-ultimo-articulo img {
+    height: 200px;
+  }
+  .card-ultimo-articulo h5 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+    line-height: 2;
+  }
+  .card-ultimo-articulo p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+    text-align: justify;
+  }
+  .body-blog {
+    display: block;
+  }
+  .body-blog .body-blog-derecha {
+    margin: 0;
+    padding: 1rem;
+  }
+  .body-blog-derecha .card {
+    width: 100%;
+  }
+  .body-blog-izquierda h5 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+    line-height: 2;
+  }
+  .body-blog-izquierda p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1rem;
+    margin: 0px 0px 5px 0px;
+    text-align: justify;
+  }
+}
 .hprincipal-guia h2 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;

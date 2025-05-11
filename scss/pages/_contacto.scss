@@ -21,13 +21,7 @@
 .portada-contacto {
     @include mixins.flexbox (center, center, column, 10px);
 }
-.card-ultimo-articulo {
-    max-width: 740px;
- }
- .card-ultimo-articulo img {
-    @extend %img-default;
-    height: 250px;
- }
+
 
  // Mobile Responsive
  @media (max-width: 768px) {

@@ -45,3 +45,12 @@
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+.ver-mas {
+  display: inline-block;
+  @include boton-estilo-vermas (rgb(34, 33, 33), transparent, 0px);
+  font-size: 0.8px;
+  &:hover,
+  &:focus {
+      text-decoration: underline;
+  }
+}
