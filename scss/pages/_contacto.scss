@@ -2,58 +2,45 @@
 @use '../utilities/mixins';
 @use '../utilities/variables';
 
+h2 {
+    @include mixins.titulos (1.5rem, 0px);
+}
 .mi-historia {
     @include mixins.flexbox (center, center, row, 30px);
     margin: 10px 200px 50px 200px;
-}
-.email-contenedor {
-    margin: 10px 200px 30px 200px;
-    @include mixins.parrafos (1.5rem, 0px);
-}
-.contacto-contenedor h3 {
-    margin-left: 198px;
+    p { @include mixins.parrafos (1rem, 0);}
 }
 .contacto-contenedor {
     background-color: lightgray;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-.portada-contacto {
-    @include mixins.flexbox (center, center, column, 10px);
+    padding: 10px;
+    margin: 50px;
+    h3 {@include mixins.titulos (1.2rem,0);
+        margin-bottom: 10px;}
+    .email-contenedor { width: 100%;
+        margin: 10px 200px 30px 200px;
+        @include mixins.parrafos (1.5rem, 0px);
+        label {@include mixins.parrafos (1rem,0);}
+        }
 }
 
 
  // Mobile Responsive
  @media (max-width: 768px) {
     .contacto-contenedor {
-        @include mixins.flexbox (center, center, column, 0px);
-        width: 100%;
-    }
-    .contacto-contenedor h3 {
-        font-size: 1.5rem;
-        margin: 10px;
-        padding: 0px;
-    }
-    .email-contenedor {
-        font-size: 1rem;
-        margin: 10px;
-        padding: 0px;
-        width: 90%;
+        margin: 5px;
+        h3 { @include mixins.titulos (1rem, 10px);}
+        .email-contenedor {
+            @include mixins.parrafos (1rem, 10px);
+            width: 90%;}
     }
     .mi-historia {
         @include mixins.flexbox (center, center, column-reverse, 0px);
         margin: 10px;
+        img {
+            margin-top: 10px;
+            border-radius: 50% !important;
+            width: 200px;
+            height: 200px;}
+        p { @include mixins.parrafos (1rem, 0px);} 
     }
-    .mi-historia img {
-        border-radius: 50% !important;
-        @extend %img-default-mobile;
-        height:100px;
-        height: 100px;
-    }
-    .mi-historia p {
-        font-size: 1rem;
-        padding: 0px;
-        text-align: justify;
-    } 
- }
- 
+}

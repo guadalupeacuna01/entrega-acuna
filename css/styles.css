@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  .articles-guia .flex-articles img, .card-ultimo-articulo img, .body-blog img, .mi-historia img, .portada img, .card-img {
+  .articles-guia .flex-articles img, .card-ultimo-articulo img, .body-blog img, .portada img, .card-img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -556,6 +556,17 @@ h5 {
     text-align: center;
   }
 }
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+}
+
 .mi-historia {
   display: flex;
   justify-content: center;
@@ -564,8 +575,34 @@ h5 {
   gap: 30px;
   margin: 10px 200px 50px 200px;
 }
+.mi-historia p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  text-align: justify;
+}
 
-.email-contenedor {
+.contacto-contenedor {
+  background-color: lightgray;
+  padding: 10px;
+  margin: 50px;
+}
+.contacto-contenedor h3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 10px;
+}
+.contacto-contenedor .email-contenedor {
+  width: 100%;
   margin: 10px 200px 30px 200px;
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
@@ -575,43 +612,38 @@ h5 {
   margin: 0px;
   text-align: justify;
 }
-
-.contacto-contenedor h3 {
-  margin-left: 198px;
-}
-
-.contacto-contenedor {
-  background-color: lightgray;
-  padding-top: 15px;
-  padding-bottom: 5px;
-}
-
-.portada-contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
+.contacto-contenedor .email-contenedor label {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
   .contacto-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0px;
-    width: 100%;
+    margin: 5px;
   }
   .contacto-contenedor h3 {
-    font-size: 1.5rem;
-    margin: 10px;
-    padding: 0px;
-  }
-  .email-contenedor {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
     font-size: 1rem;
     margin: 10px;
-    padding: 0px;
+    line-height: 1.5;
+    color: black;
+  }
+  .contacto-contenedor .email-contenedor {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1rem;
+    margin: 10px;
+    text-align: justify;
     width: 90%;
   }
   .mi-historia {
@@ -623,34 +655,49 @@ h5 {
     margin: 10px;
   }
   .mi-historia img {
+    margin-top: 10px;
     border-radius: 50% !important;
-    height: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   .mi-historia p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
     font-size: 1rem;
-    padding: 0px;
+    margin: 0px;
     text-align: justify;
   }
 }
-.titulo-galeria h3 {
+h2 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 3rem;
-  margin: 0px;
+  font-size: 2rem;
+  margin: 0;
   line-height: 1.5;
   color: black;
 }
 
-.titulo-galeria p {
+.carrusel-principal h5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+}
+.carrusel-principal p {
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
-  font-size: 2rem;
-  margin: 10px 100px 10px 100px;
+  font-size: 1.2rem;
+  margin: 0;
   text-align: justify;
 }
 
@@ -661,7 +708,25 @@ h5 {
   flex-direction: column;
   gap: 10px;
 }
-
+.titulo-galeria h3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+}
+.titulo-galeria p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 10px 100px 10px 100px;
+  text-align: justify;
+}
 .titulo-galeria img {
   width: 20px;
   height: 20px;
@@ -673,6 +738,29 @@ h5 {
   align-items: center;
   flex-direction: row;
   gap: 10px;
+}
+.galeria-fotos h4 {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 0px;
+  text-align: justify;
+  text-align: center;
+}
+
+.grid-xestados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1.7fr);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "nsw-fotos nsw-fotos nsw-fotos" "qld-fotos qld-fotos qld-fotos" "vic-fotos vic-fotos vic-fotos" "sa-fotos sa-fotos sa-fotos" "nt-fotos nt-fotos nt-fotos" "wa-fotos wa-fotos wa-fotos" "tas-fotos tas-fotos tas-fotos";
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .nsw-fotos {
@@ -703,19 +791,6 @@ h5 {
   grid-area: tas-fotos;
 }
 
-.grid-xestados {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 1.7fr);
-  gap: 10px;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas: "nsw-fotos nsw-fotos nsw-fotos" "qld-fotos qld-fotos qld-fotos" "vic-fotos vic-fotos vic-fotos" "sa-fotos sa-fotos sa-fotos" "nt-fotos nt-fotos nt-fotos" "wa-fotos wa-fotos wa-fotos" "tas-fotos tas-fotos tas-fotos";
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .grid-xestados img {
   width: 250px;
   height: 250px;
@@ -725,17 +800,6 @@ h5 {
   margin: 10px;
 }
 
-.galeria-fotos h4 {
-  font-family: "Special Gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  font-size: 1.5rem;
-  margin: 0px;
-  text-align: justify;
-  text-align: center;
-}
-
 @media (max-width: 768px) {
   h2,
   .titulo-galeria h3 {
@@ -743,11 +807,11 @@ h5 {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 0px;
+    font-size: 1rem;
+    margin: 10px;
     line-height: 1.5;
     color: black;
-    line-height: 2;
+    line-height: 1.5;
   }
   .titulo-galeria p {
     font-family: "Special Gothic", sans-serif;
@@ -757,12 +821,11 @@ h5 {
     font-size: 1rem;
     margin: 0px 15px 15px 15px;
     text-align: justify;
-    text-align: justify;
   }
   .grid-xestados {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1.7fr);
-    grid-template-areas: none;
+    grid-template-areas: "nsw-fotos nsw-fotos nsw-fotos" "qld-fotos qld-fotos qld-fotos" "vic-fotos vic-fotos vic-fotos" "sa-fotos sa-fotos sa-fotos" "nt-fotos nt-fotos nt-fotos" "wa-fotos wa-fotos wa-fotos" "tas-fotos tas-fotos tas-fotos";
     width: 100%;
     margin-left: 0px;
     padding: 10px;
