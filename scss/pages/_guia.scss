@@ -3,9 +3,34 @@
 @use '../utilities/variables';
 @use '../components/cards';
  
+.hprincipal-guia h2 {
+    @include mixins.titulos (2rem, 0px);
+}
+.hprincipal-guia p {
+    @include mixins.parrafos (1.2rem, 10px 50px);
+}
+
+.card-guia {
+    margin: 0px 50px;
+}
+.card-guia img {
+    height: 400px;
+ }
+.card-guia h5 {
+    @include cards.title-cards (1.5rem);
+}
+.card-guia p {
+    @include cards.text-cards (1rem, 0px);
+    text-align: justify
+}
+
  .articles-guia {
     @include mixins.flexbox (center, center, column, 0px);
- }
+    h3 { @include mixins.titulos (1.5rem, 0);
+        text-transform: uppercase;}
+    p { @include mixins.parrafos (1rem, 0px);
+        text-align: justify;}
+    }
  .flex-articles {
     @include mixins.flexbox (center, center, column, 20px);
  }
@@ -19,9 +44,7 @@
  .articulo-reverse {
     @include mixins.flexbox (space-between, center, row, 20px);
  }
- .card-guia img {
-    height: 400px;
- }
+ 
  
  // Mobile Responsive
 @media (max-width: 768px) {

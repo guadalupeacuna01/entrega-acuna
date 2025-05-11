@@ -32,10 +32,14 @@
                     </div>
                 
                     <div class="buscar">
-                        <form action="buscar">
-                            <label for="buscar">Buscar</label>
-                            <input type="search" id="buscar" name="buscar">
-                        </form>
+                        <button class="btn btn-outline-dark btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#inputBuscar" aria-expanded="false" aria-controls="inputBuscar">
+                            Buscar
+                        </button>
+                        <div class="collapse mt-2" id="inputBuscar">
+                            <form action="buscar">
+                              <input type="search" id="buscar" name="buscar" class="form-control" placeholder="Escribe aquí...">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,35 +47,34 @@
                 <nav class="navbar navbar-expand-md navbar-light bg-body">
                     
                     <div class="container-fluid">
-                        <div class="d-flex mt-3">
-                            <img src="../assets/img/icono-australia.png" style="width: 20px; height: 20px;" class="d-block d-md-none" alt="Icono del mapa de Autralia">
+                        <div class="d-flex mt-1 ms-1">
                             <h1 class="titulo-mobile d-block d-md-none ms-2">Por Australia</h1>
                         </div>
                     
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto"> 
-                            <li class="nav-item">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto"> 
+                                <li class="nav-item">
                                 <a href="../index.html" class="nav-link link-boton">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link link-boton boton-active text-white">Guía de mochilera</a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="./blog.html" class="nav-link link-boton">Blog de viaje</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./fotos.html" class="nav-link link-boton">Galería de fotos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./contacto.html" class="nav-link link-boton">Contactame</a>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-boton boton-active text-white">Guía de mochilera</a>
+                                </li>
+                                <li class="nav-item">
+                                <a href="./blog.html" class="nav-link link-boton">Blog de viaje</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./fotos.html" class="nav-link link-boton">Galería de fotos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contacto.html" class="nav-link link-boton">Contactame</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </nav>
             </div>
         </div>   
@@ -84,7 +87,7 @@
 
         <section>
             <div>
-                <div class="card-group m-5 card-guia">
+                <div class="card-group mb-5 card-guia">
                     <div class="card">
                         <a href="#articulo1">
                             <img src="../assets/img/img-guia/working-hostel.jpeg" class="card-img-top" alt="Imagen generada con IA de un Working Hostel">
@@ -92,7 +95,7 @@
                                 <h5 class="card-title">Trabajar en un Working Hostel</h5>
                                 <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi aut in cum, ipsam voluptates sint quibusdam cupiditate sequi porro quasi eaque harum, magni expedita aperiam, non accusamus? Repudiandae, aperiam omnis.</p>
-                                <p class="card-text fw-lighter fst-italic ver-mas"><small><a href="./pages/blog.html">Ver más...</a></small></p>
+                                <p class="card-text fw-lighter fst-italic mt-2 ver-mas"><small><a href="./pages/blog.html">Ver más...</a></small></p>
                             </div>
                         </a>
                     </div>
@@ -123,8 +126,8 @@
         <section class="articles-guia">
             <h3 class="text-center mb-md-3 mb-2">- Últimos artículos -</h3>
             <div class="flex-articles">
-                <div class="articulo-reverse m-md-5 m-3 pb-md-5 pb-3 border-bottom border-light-subtle">
-                    <div class="titulo-txt m-5">
+                <div class="articulo-reverse m-5 pb-md-5 pb-3 border-bottom border-light-subtle">
+                    <div class="titulo-txt m-3">
                         <h5 class="titulo-articulo mb-3" id="articulo1">Trabajar en un Working Hostel</h5>
                         <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
                         <img src="../assets/img/img-guia/working-hostel.jpeg" alt="Imagen generada con IA de un Working Hostel" class="d-md-none d-block mx-auto mb-3">
@@ -132,13 +135,13 @@
 
                         Sed sit amet porta justo. Mauris venenatis augue quis ex lobortis, a pellentesque velit posuere. Aliquam volutpat, arcu a interdum feugiat, ligula justo iaculis urna, nec consequat nulla elit sit amet est. Etiam dapibus magna arcu, quis varius lectus elementum vel. Cras vehicula velit in mi ultricies, et consequat erat sagittis. Fusce dictum congue tortor, at tempor risus molestie eu. Vivamus imperdiet dui a sapien eleifend laoreet. Quisque feugiat, lectus et cursus sollicitudin, lacus risus auctor enim, eget faucibus neque dui viverra sapien. Suspendisse in placerat mi, id dapibus sapien. Phasellus viverra turpis odio, ac cursus arcu pretium ut. Integer sit amet pretium lorem, at pretium turpis. Mauris gravida metus vitae sem scelerisque mollis. Aliquam mattis sem eu odio accumsan sodales. Mauris pharetra ligula at dolor sagittis, vitae efficitur orci convallis.</p>
                     </div>
-                    <img src="../assets/img/img-guia/working-hostel.jpeg" alt="Imagen generada con IA de un Working Hostel" class="ms-5 d-none d-md-block">
+                    <img src="../assets/img/img-guia/working-hostel.jpeg" alt="Imagen generada con IA de un Working Hostel" class="me-2 d-none d-md-block">
                 </div>
-                <div id="articulo2" class="articulo mb-5">
-                    <div class="titulo-txt m-5">
+                <div id="articulo2" class="mt-2 articulo m-5">
+                    <div class="titulo-txt m-3">
                         <h5 class="titulo-articulo mb-3">Petrol Spy: Cómo conseguir el gasoil más barato</h5>
                         <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
-                        <img src="../assets/img/img-guia/petrol-spy.png" class="mb-3 d-md-none d-block mx-auto" alt="Logo de la app de Petrol Spy">
+                        <img src="../assets/img/img-guia/petrol-spy.png" class="ms-2 d-md-none d-block" alt="Logo de la app de Petrol Spy">
                         <p class="texto-articulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus, lorem id maximus luctus, sapien turpis congue ligula, ac vulputate nisl nulla a dolor. Phasellus rutrum lacus quis commodo consectetur. Nam blandit faucibus mollis. Quisque in enim vel elit sagittis eleifend. Vivamus et fringilla odio, a interdum lorem. Aliquam tincidunt tortor dignissim auctor luctus. Vivamus maximus interdum enim nec convallis. Duis at scelerisque tellus. Ut faucibus pellentesque lectus nec vestibulum. Maecenas tincidunt urna quis lorem pharetra, nec posuere leo aliquam. Praesent dignissim id urna sit amet condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ligula id magna hendrerit molestie. Ut sapien lorem, mattis ut justo et, mollis sollicitudin purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
                         Sed sit amet porta justo. Mauris venenatis augue quis ex lobortis, a pellentesque velit posuere. Aliquam volutpat, arcu a interdum feugiat, ligula justo iaculis urna, nec consequat nulla elit sit amet est. Etiam dapibus magna arcu, quis varius lectus elementum vel. Cras vehicula velit in mi ultricies, et consequat erat sagittis. Fusce dictum congue tortor, at tempor risus molestie eu. Vivamus imperdiet dui a sapien eleifend laoreet. Quisque feugiat, lectus et cursus sollicitudin, lacus risus auctor enim, eget faucibus neque dui viverra sapien. Suspendisse in placerat mi, id dapibus sapien. Phasellus viverra turpis odio, ac cursus arcu pretium ut. Integer sit amet pretium lorem, at pretium turpis. Mauris gravida metus vitae sem scelerisque mollis. Aliquam mattis sem eu odio accumsan sodales. Mauris pharetra ligula at dolor sagittis, vitae efficitur orci convallis.</p>
@@ -158,14 +161,14 @@
                    <li class="nav-item"><a href="./Pages/blog.html" class="nav-link link-boton">Blog de viaje</a></li>
                    <li class="nav-item"><a href="./Pages/fotos.html" class="nav-link link-boton">Galería de fotos</a></li>
                    <li class="nav-item"><a href="./Pages/contacto.html" class="nav-link link-boton">Contactame</a></li>
-               </ul>
-           </nav>
-           <div class="d-block d-md-none mx-auto">
-               <img src="../assets/img/logos-redes/instagram-black.png" alt="Instagram" width="30px" height="30px" class="p-2">
-               <img src="../assets/img/logos-redes/tiktok-black.png" alt="Tik Tok" width="30px" height="30px" class="p-2">
-           </div>
-       </div> 
-   </footer>
+                </ul>
+            </nav>
+            <div class="footer-mobile d-md-none mx-auto">
+                <img src="../assets/img/logos-redes/instagram-black.png" alt="Instagram" width="30px" height="30px" class="p-2">
+                <img src="../assets/img/logos-redes/tiktok-black.png" alt="Tik Tok" width="30px" height="30px" class="p-2">
+            </div>
+        </div> 
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> 
 </body>
 </html>
