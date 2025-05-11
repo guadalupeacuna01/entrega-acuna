@@ -294,6 +294,7 @@ a {
     text-align: justify;
     text-align: start;
     text-transform: uppercase;
+    white-space: nowrap;
   }
   .titulo-mobile {
     display: none;
