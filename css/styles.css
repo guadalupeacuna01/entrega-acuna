@@ -1,0 +1,951 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.card-ultimo-articulo img, .portada img, .card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card-guia img, .flex-articles img, .card-ultimo-articulo img, .body-blog img, .mi-historia img, .card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+.titulo h1 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+  white-space: nowrap;
+}
+
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 50px 0px 0px 30px;
+  line-height: 1.5;
+  color: black;
+}
+
+h3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+}
+
+p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.ver-mas {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 0.8rem;
+  margin: 0;
+  text-decoration: underline;
+  color: rgb(51, 50, 50);
+}
+
+.btn-custom {
+  border: none !important;
+  font-size: 1.7rem !important;
+  text-transform: uppercase !important;
+  background-color: transparent;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: black;
+  color: white;
+}
+
+.encabezado-contenedor {
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.menu-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+.menu-contenedor form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buscar input {
+  max-width: 150px;
+}
+
+.barra-navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.menu-contenedor {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.7rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+  content: "" !important;
+}
+
+.icono-australia {
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+
+nav ul li {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 0px 3rem;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+}
+
+.header-inicio a {
+  color: #493f34;
+}
+
+.link-boton {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.link-boton:hover, .link-boton:focus {
+  background-color: black;
+  color: white;
+}
+
+.boton-active {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.boton-active:hover, .boton-active:focus {
+  background-color: white;
+  color: white;
+}
+
+.titulo-mobile {
+  display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+  .barra-navegacion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.portada {
+  margin: 0;
+}
+
+.portada img {
+  height: 450px;
+  margin-top: 5px;
+}
+
+.card-img-overlay {
+  top: 30px;
+  left: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 140%;
+  pointer-events: none;
+  margin-left: 0px;
+}
+
+.portada h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 10px 10px 0px 0px;
+  line-height: 1.5;
+  color: black;
+}
+
+.portada p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+.articulos-inicio h3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.5;
+  color: black;
+  text-transform: uppercase;
+}
+
+.articulos-inicio h4 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+  text-transform: uppercase;
+}
+
+.articulos-inicio p {
+  font-size: 1rem;
+  color: black;
+  margin: 0px;
+}
+
+.ver-mas {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: rgb(34, 33, 33);
+  padding: 0px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.8px;
+}
+.ver-mas:hover, .ver-mas:focus {
+  text-decoration: underline;
+}
+
+.card-img {
+  margin-bottom: 15px;
+}
+
+.foto-340 {
+  height: 340px;
+}
+
+.lastsection-inicio {
+  background-color: lightgray;
+  color: black;
+}
+
+h5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+}
+
+.mi-foto {
+  width: 200px;
+  height: 200px;
+}
+
+.mi-historia-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  margin: 20px;
+}
+
+.mi-historia-inicio p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.2rem;
+  margin: 10px;
+  text-align: justify;
+}
+
+.mi-historia-inicio img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+.mi-historia-inicio h5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: -15px 0px 0px 0px;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .portada h2 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0px 0px 10px 0px;
+    line-height: 1.5;
+    color: black;
+  }
+  .portada p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 2rem;
+    margin: 20px 0px 0px 30px;
+  }
+  .card-img-overlay {
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 140%;
+    pointer-events: none;
+    margin-left: 0px;
+  }
+  .articulos-inicio,
+  .card-body {
+    border-bottom: 1px solid lightgrey;
+  }
+  .card-title {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+  }
+  .card-text {
+    font-size: 1rem;
+    color: black;
+    margin: 0px 0px 10px 0px;
+  }
+  h3 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 15px 0px 0px 0px;
+    line-height: 1.5;
+    color: black;
+  }
+  .card-img {
+    margin-bottom: 15px;
+  }
+  .mi-historia-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+  }
+  .mi-historia-inicio p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: justify;
+  }
+  .mi-historia-inicio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+  }
+  .mi-historia-inicio h5 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: -15px 0px 0px 0px;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+  }
+}
+.mi-historia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  margin: 10px 200px 50px 200px;
+}
+
+.email-contenedor {
+  margin: 10px 200px 30px 200px;
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+.contacto-contenedor h3 {
+  margin-left: 198px;
+}
+
+.contacto-contenedor {
+  background-color: lightgray;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.portada-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-ultimo-articulo {
+  max-width: 740px;
+}
+
+.card-ultimo-articulo img {
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .contacto-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+  }
+  .contacto-contenedor h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 0px;
+  }
+  .email-contenedor {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 0px;
+    width: 90%;
+  }
+  .mi-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    margin: 10px;
+  }
+  .mi-historia img {
+    border-radius: 50% !important;
+    height: 100px;
+    height: 100px;
+  }
+  .mi-historia p {
+    font-size: 1rem;
+    padding: 0px;
+    text-align: justify;
+  }
+}
+.titulo-galeria h3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+}
+
+.titulo-galeria p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 2rem;
+  margin: 10px 100px 10px 100px;
+}
+
+.titulo-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo-galeria img {
+  width: 20px;
+  height: 20px;
+}
+
+.galeria-fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nsw-fotos {
+  grid-area: nsw-fotos;
+}
+
+.qld-fotos {
+  grid-area: qld-fotos;
+}
+
+.vic-fotos {
+  grid-area: vic-fotos;
+}
+
+.sa-fotos {
+  grid-area: sa-fotos;
+}
+
+.nt-fotos {
+  grid-area: nt-fotos;
+}
+
+.wa-fotos {
+  grid-area: wa-fotos;
+}
+
+.tas-fotos {
+  grid-area: tas-fotos;
+}
+
+.grid-xestados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1.7fr);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "nsw-fotos nsw-fotos nsw-fotos" "qld-fotos qld-fotos qld-fotos" "vic-fotos vic-fotos vic-fotos" "sa-fotos sa-fotos sa-fotos" "nt-fotos nt-fotos nt-fotos" "wa-fotos wa-fotos wa-fotos" "tas-fotos tas-fotos tas-fotos";
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-xestados img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.galeria-fotos h4 {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h2,
+  .titulo-galeria h3 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+    line-height: 2;
+  }
+  .titulo-galeria p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1rem;
+    margin: 0px 15px 15px 15px;
+    text-align: justify;
+  }
+  .grid-xestados {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1.7fr);
+    grid-template-areas: none;
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .grid-xestados img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    margin: 0px;
+  }
+  .grid-xestados h4 {
+    display: none;
+  }
+  .grid-xestados > div {
+    display: contents;
+  }
+  .galeria-fotos {
+    margin: 0px 0px 0px 0px;
+  }
+}
+.body-blog {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-area: "body-blog-izquierda body-blog-derecha";
+  gap: 20px;
+}
+
+.body-blog-derecha .card {
+  width: 30rem;
+}
+
+.titulo-blog {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 10px;
+  line-height: 1.5;
+  color: black;
+}
+
+.card-ultimo-articulo img {
+  height: 200px;
+}
+
+.card-ultimo-articulo h5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+  line-height: 2;
+}
+
+.card-ultimo-articulo p {
+  text-align: justify;
+}
+
+.body-blog {
+  display: block;
+}
+
+.body-blog-derecha {
+  margin: 0;
+  padding: 1rem;
+}
+
+.body-blog-derecha .card {
+  width: 100%;
+}
+
+.body-blog-izquierda h5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0px;
+  line-height: 1.5;
+  color: black;
+  line-height: 2;
+}
+
+.body-blog-izquierda p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1rem;
+  margin: 0px;
+  text-align: justify;
+}
+
+.articles-guia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.flex-articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-articles img {
+  width: 250px;
+  height: auto;
+}
+
+.articulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.articulo-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card-guia img {
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .hprincipal-guia h2 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+  }
+  .hprincipal-guia p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1.2rem;
+    margin: 2rem;
+    text-align: justify;
+  }
+  .card-guia .card-body h5 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+    line-height: 2;
+  }
+  .card-guia p {
+    font-size: 1rem;
+    color: black;
+    margin: 0px;
+  }
+  .articulo-reverse,
+  .articulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .flex-articles img {
+    max-width: 300px;
+  }
+  .texto-articulo {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1rem;
+    margin: 0px;
+    text-align: justify;
+  }
+  .titulo-articulo {
+    line-height: 2;
+  }
+}
+.footer-contenedor {
+  width: 100%;
+  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.footer-inicio .barra-navegacion {
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+body {
+  background-color: #fcfdfd;
+}
+
+/*# sourceMappingURL=styles.css.map */

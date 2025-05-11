@@ -1,0 +1,15 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+@use '../components/buttons';
+
+.footer-contenedor {
+    width: 100%;
+    margin-top: 25px;
+    margin-top: 10px;
+ }
+ .footer-inicio .barra-navegacion {
+    color: variables.$color-black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ }
+ 

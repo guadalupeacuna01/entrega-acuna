@@ -1,0 +1,104 @@
+@use '../base/typography';
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.titulo-galeria h3 {
+    @include mixins.titulos (3rem, 0px);
+}
+.titulo-galeria p {
+    @include mixins.parrafos (2rem, 10px 100px 10px 100px);
+}
+.titulo-galeria {
+    @include mixins.flexbox (center, center, column, 10px);
+}
+.titulo-galeria img {
+    width: 20px;
+    height: 20px;
+}
+.galeria-fotos {
+    @include mixins.flexbox (center, center, row, 10px);
+}
+
+// @each para galeria de fotos
+$estados: (
+    nsw: nsw-fotos,
+    qld: qld-fotos,
+    vic: vic-fotos,
+    sa: sa-fotos,
+    nt: nt-fotos,
+    wa: wa-fotos,
+    tas: tas-fotos
+  );
+
+  @each $clave, $area in $estados {
+    .#{$area} {
+      grid-area: #{$area};
+    }
+  }
+  .grid-xestados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1.7fr);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "nsw-fotos nsw-fotos nsw-fotos"
+    "qld-fotos qld-fotos qld-fotos"
+    "vic-fotos vic-fotos vic-fotos"
+    "sa-fotos sa-fotos sa-fotos"
+    "nt-fotos nt-fotos nt-fotos"
+    "wa-fotos wa-fotos wa-fotos"
+    "tas-fotos tas-fotos tas-fotos";
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+.grid-xestados img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    margin: 10px;
+} 
+.galeria-fotos h4 {
+    @include mixins.parrafos (1.5rem, 0px);
+    text-align: center;
+}
+
+// Mobile Responsive
+@media (max-width: 768px) {
+    h2, 
+    .titulo-galeria h3 {
+        @include mixins.titulos (1.5rem, 0px);
+        line-height: 2;
+    }
+    .titulo-galeria p {
+        @include mixins.parrafos (1rem, 0px 15px 15px 15px);
+        text-align: justify;
+    }
+    .grid-xestados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1.7fr);
+        grid-template-areas: none;
+        width: 100%;
+        margin-left: 0px;
+        padding: 10px;
+      }
+    .grid-xestados img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+        margin: 0px;
+    }
+    .grid-xestados h4 {
+        display: none;
+      }
+    .grid-xestados > div {
+        display: contents;
+      }
+    .galeria-fotos {
+        margin: 0px 0px 0px 0px;
+    } 
+}

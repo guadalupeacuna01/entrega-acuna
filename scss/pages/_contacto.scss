@@ -1,0 +1,65 @@
+@use '../base/typography';
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.mi-historia {
+    @include mixins.flexbox (center, center, row, 30px);
+    margin: 10px 200px 50px 200px;
+}
+.email-contenedor {
+    margin: 10px 200px 30px 200px;
+    @include mixins.parrafos (1.5rem, 0px);
+}
+.contacto-contenedor h3 {
+    margin-left: 198px;
+}
+.contacto-contenedor {
+    background-color: lightgray;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.portada-contacto {
+    @include mixins.flexbox (center, center, column, 10px);
+}
+.card-ultimo-articulo {
+    max-width: 740px;
+ }
+ .card-ultimo-articulo img {
+    @extend %img-default;
+    height: 250px;
+ }
+
+ // Mobile Responsive
+ @media (max-width: 768px) {
+    .contacto-contenedor {
+        @include mixins.flexbox (center, center, column, 0px);
+        width: 100%;
+    }
+    .contacto-contenedor h3 {
+        font-size: 1.5rem;
+        margin: 10px;
+        padding: 0px;
+    }
+    .email-contenedor {
+        font-size: 1rem;
+        margin: 10px;
+        padding: 0px;
+        width: 90%;
+    }
+    .mi-historia {
+        @include mixins.flexbox (center, center, column-reverse, 0px);
+        margin: 10px;
+    }
+    .mi-historia img {
+        border-radius: 50% !important;
+        @extend %img-default-mobile;
+        height:100px;
+        height: 100px;
+    }
+    .mi-historia p {
+        font-size: 1rem;
+        padding: 0px;
+        text-align: justify;
+    } 
+ }
+ 

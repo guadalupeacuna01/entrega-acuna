@@ -1,0 +1,11 @@
+@use "../utilities/variables";
+@use '../utilities/mixins';
+
+@mixin title-cards ($size) {
+    @include mixins.titulos ($size: 1.2rem, $margin: 0px);
+}
+@mixin text-cards ($size, $margin) {
+    font-size: $size;
+    color: variables.$color-black;
+    margin: $margin;
+}

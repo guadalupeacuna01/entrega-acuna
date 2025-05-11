@@ -1,0 +1,60 @@
+@use '../base/typography';
+@use '../utilities/mixins';
+@use '../utilities/variables';
+@use '../components/cards';
+ 
+ .articles-guia {
+    @include mixins.flexbox (center, center, column, 0px);
+ }
+ .flex-articles {
+    @include mixins.flexbox (center, center, column, 20px);
+ }
+ .flex-articles img {
+    width:250px;
+    height: auto;
+ }
+ .articulo {
+    @include mixins.flexbox (space-between, center, row-reverse, 20px);
+ }
+ .articulo-reverse {
+    @include mixins.flexbox (space-between, center, row, 20px);
+ }
+ .card-guia img {
+    height: 400px;
+ }
+ 
+ // Mobile Responsive
+@media (max-width: 768px) {
+    .hprincipal-guia h2 {
+        @include mixins.titulos (1.5rem, 0px);
+    }
+    .hprincipal-guia p {
+        @include mixins.parrafos (1.2rem, 2rem);
+        text-align: justify;
+    }
+    .card-guia img {
+        @extend %img-default-mobile;
+    }
+    .card-guia .card-body h5 {
+        @include cards.title-cards (1.2rem);
+        line-height: 2;
+    }
+    .card-guia p {
+        @include cards.text-cards (1rem, 0px);
+    }
+    .articulo-reverse,
+    .articulo {
+        @include mixins.flexbox (center, center, column-reverse,0px)
+   }
+   .flex-articles img {
+    @extend %img-default-mobile;
+    max-width: 300px;
+    }
+    .texto-articulo {
+        @include mixins.parrafos (1rem, 0px);
+        text-align: justify;
+    }
+    .titulo-articulo {
+        line-height: 2;
+    }
+ }

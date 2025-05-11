@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De mochila por Oz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&family=Francois+One&family=Special+Gothic&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="menu-contenedor">
                     <div class="menu nav-item dropdown">
-                        <a class="nav-link dropdown-toggle menu-negro" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                        <a class="nav-link dropdown-toggle btn-custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item link-boton" href="./index.html">Inicio</a></li>
                             <li><a class="dropdown-item link-boton" href="./Pages/guia.html">Guía de mochilera</a></li>
@@ -41,10 +41,18 @@
                     </div>
                 
                     <div class="buscar">
-                        <form action="buscar">
-                            <label for="buscar">Buscar</label>
-                            <input type="search" id="buscar" name="buscar">
-                        </form>
+                        <button class="btn btn-outline-dark btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#inputBuscar" aria-expanded="false" aria-controls="inputBuscar">
+                            Buscar
+                        </button>
+                        <div class="collapse mt-2" id="inputBuscar">
+                            <form action="buscar">
+                              <input type="search" id="buscar" name="buscar" class="form-control" placeholder="Escribe aquí...">
+                            </form>
+                        </div>
+                            <!--<form action="buscar">
+                                <label for="buscar">Buscar</label>
+                                <input type="search" id="buscar" name="buscar">
+                            </form>-->
                     </div>
                 </div>
             </div>
@@ -88,26 +96,26 @@
 
     <main>
         <div class="portada">
-            <div class="card text-bg border-white m-2 m-md-5">
+            <div class="card text-bg border-white m-2 m-md-2">
                 <img src="./assets/img/foto-portada-5.png" class="card-img" alt="Foto portada de Sydney">
                 <div class="card-img-overlay modificado-card">
                     <h2 class="card-title bg-body-tertiary bg-opacity-25"> Blog de una mochilera</h2>
-                    <p class="card-text bg-body-tertiary bg-opacity-25">Bienvenidos a mi lugar favorito, mi espacio para compartir experiencias y ayudar a los mochileros que sueñan con Australia como su próximo destino.</p> 
+                    <p class="card-text bg-body-tertiary bg-opacity-25">Bienvenidos a mi lugar favorito, mi espacio para compartir experiencias y ayudar a los mochileros que sueñan con Australia 🇦🇺  como su próximo destino.</p> 
                 </div>
             </div> 
         </div>      
-        <section class="articulos-inicio mx-auto p-2 p-md-5">
+        <section class="articulos-inicio mx-auto p-2 p-md-1">
             <h3 class="text-center mb-3">- Últimos artículos -</h3>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="row row-cols-1 row-cols-md-2 g-4 px-4 justify-content-center">
                 <div class="col">
                     <div class="card border-white">
                         <img src="./assets/img/fotos-articulos/picking-uvas.jpeg" class="card-img-top w-100 d-none d-md-block" alt="Foto de un carrito para recolectar uvas">
                         <div class="card-body">
-                            <h5 class="card-title">Título del artículo 1</h5>
+                            <h4 class="card-title">Picking de uvas</h4>
                             <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
                             <img src="./assets/img/fotos-articulos/picking-uvas.jpeg" class="d-block d-md-none" alt="Foto de un carrito para recolectar uvas">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint quos possimus saepe dignissimos odit! Mollitia atque soluta sint maxime aut, facilis earum minus vero temporibus eveniet enim, totam molestiae!</p>
-                            <p class="card-text fw-lighter fst-italic ver-mas"><a href="./pages/blog.html">Ver más...</a></p>
+                            <p class="card-text fw-lighter fst-italic mt-2 ver-mas"><a href="./pages/blog.html">Ver más...</a></p>
                         </div>
                     </div>
                 </div>
@@ -116,11 +124,11 @@
                     <div class="card border-white">
                         <img src="./assets/img/fotos-articulos/con-canguros.jpeg" class="card-img-top w-100 d-none d-md-block" alt="Foto mirando un canguro">
                         <div class="card-body">
-                            <h5 class="card-title">Título del artículo 2</h5>
+                            <h4 class="card-title">Título del artículo 2</h4>
                             <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
                             <img src="./assets/img/fotos-articulos/con-canguros.jpeg" class="d-block d-md-none" alt="Foto mirando un canguro">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit neque accusamus itaque voluptatibus cum sed alias vel laudantium unde, possimus blanditiis maiores placeat voluptas culpa quae eius repellendus voluptate?</p>
-                            <p class="card-text fw-lighter fst-italic ver-mas"><small><a href="./pages/blog.html">Ver más...</a></small></p>
+                            <p class="card-text fw-lighter fst-italic mt-2 ver-mas"><a href="./pages/blog.html">Ver más...</a></p>
                         </div>
                     </div>
                 </div>
@@ -129,11 +137,11 @@
                     <div class="card border-white">
                         <img src="./assets/img/fotos-articulos/pink-lake-horizontal.jpeg" class="card-img-top w-100 foto-340 d-md-block d-none" alt="Foto con amigos en un lago rosa">
                         <div class="card-body">
-                            <h5 class="card-title">Título del artículo 3</h5>
+                            <h4 class="card-title">Título del artículo 3</h4>
                             <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
                             <img src="./assets/img/fotos-articulos/pink-lake-horizontal.jpeg" class="card-img-top w-100 foto-340 d-block d-md-none" alt="Foto con amigos en un lago rosa">
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus non perspiciatis doloremque alias, animi cumque accusantium quasi illum aliquam officia repudiandae nisi impedit dolore pariatur recusandae, hic ad rerum repellendus!</p>
-                            <p class="card-text fw-lighter fst-italic ver-mas" style="width: 8rem;"><small><a href="./pages/blog.html">Ver más...</a></small></p>
+                            <p class="card-text fw-lighter fst-italic mt-2 ver-mas"><a href="./pages/blog.html">Ver más...</a></p>
                         </div>
                     </div>
                 </div>
@@ -142,11 +150,11 @@
                     <div class="card border-white">
                         <img src="./assets/img/fotos-articulos/foto-roadtrip-senalizaciones.jpeg" class="card-img-top w-100 foto-340 d-none d-md-block" alt="Foto de señalizaciones de animales en la ruta de Australia">
                         <div class="card-body">
-                            <h5 class="card-title">Título del artículo 4</h5>
+                            <h4 class="card-title">Título del artículo 4</h4>
                             <p class="card-text"><small class="text-body-secondary">Publicado el 27/04/2025</small></p>
                             <img src="./assets/img/fotos-articulos/foto-roadtrip-senalizaciones.jpeg" class="card-img-top w-100 foto-340 d-block d-md-none" alt="Foto de señalizaciones de animales en la ruta de Australia">
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus non perspiciatis doloremque alias, animi cumque accusantium quasi illum aliquam officia repudiandae nisi impedit dolore pariatur recusandae, hic ad rerum repellendus!</p>
-                            <p class="ccard-text fw-lighter fst-italic ver-mas" style="width: 6rem;"><small><a href="./pages/blog.html">Ver más...</a></small></p>
+                            <p class="card-text fw-lighter fst-italic mt-2 ver-mas"><a href="./pages/blog.html">Ver más...</a></p>
                         </div>
                     </div>
                 </div>

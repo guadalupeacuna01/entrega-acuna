@@ -1,0 +1,52 @@
+@use '../base/typography';
+@use '../utilities/mixins';
+@use '../utilities/variables';
+@use '../components/cards';
+
+.body-blog {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-area: 
+    "body-blog-izquierda body-blog-derecha";
+    gap: 20px;
+}
+.body-blog-derecha .card {
+    width: 30rem
+ }
+
+ // Mobile Responsive
+ .titulo-blog {
+    @include mixins.titulos (1.5rem, 10px);
+}
+.card-ultimo-articulo img {
+    @extend %img-default-mobile;
+    height: 200px;
+}
+.card-ultimo-articulo h5 {
+    @include mixins.titulos (1.5rem, 0px);
+    line-height: 2;
+}
+.card-ultimo-articulo p {
+    text-align: justify;
+}
+.body-blog {
+    display: block;
+}
+.body-blog img {
+    @extend %img-default-mobile;
+}
+.body-blog-derecha {
+    margin: 0;
+    padding: 1rem;
+}
+.body-blog-derecha .card {
+    width: 100%;
+}
+.body-blog-izquierda h5 {
+    @include mixins.titulos (1.5rem, 0px);
+    line-height: 2;
+}
+.body-blog-izquierda p {
+    @include mixins.parrafos (1rem, 0px);
+    text-align: justify;
+}

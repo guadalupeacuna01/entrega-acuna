@@ -1,0 +1,84 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+@use '../components/buttons';
+@use '../base/typography';
+
+.encabezado-contenedor {
+    width: 100%;
+}
+.top-bar {
+    @include mixins.flexbox (space-between, center, row, 1rem);
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+.menu-contenedor {
+    @include mixins.flexbox (space-between, flex-start, column, 0);
+    form {
+        @include mixins.flexbox (center, flex-start, column, 0.5rem);
+      }
+    @include mixins.parrafos (1.5rem, 0px);
+}
+.buscar input {
+    max-width: 150px;
+  }
+
+.barra-navegacion {
+    @include mixins.flexbox (center, center, row, 2rem);
+    border-top: 1px solid variables.$color-black;
+    border-bottom: 1px solid variables.$color-black;
+}
+
+.menu-contenedor {
+    @include mixins.parrafos (1.7rem, 0);
+    text-transform: uppercase;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    content: "" !important;
+}
+
+.icono-australia {
+    align-items: center;
+}
+
+// nav
+nav ul {
+    list-style: none;
+    @include mixins.flexbox (space-between, center, row, 0);
+}
+nav ul li {
+    @include mixins.parrafos (1rem, 0px 3rem);
+    text-transform: uppercase;
+}
+a {
+    color: variables.$color-black;
+}
+.header-inicio a {
+    color: #493f34;
+}
+.link-boton {
+    @include buttons.boton-estilo (black, transparent, 8px 16px);
+}
+.boton-active {
+    @include buttons.boton-estilo (white, black, 8px 16px);
+}
+
+.titulo-mobile {
+    display: none; // oculto en desktop
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+// Mobile Responsive
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+    .barra-navegacion {
+        display:flex;
+        flex-direction: column;
+    }
+
+}

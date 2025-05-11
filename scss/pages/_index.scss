@@ -1,0 +1,147 @@
+@use '../base/typography';
+@use '../utilities/mixins';
+@use '../utilities/variables';
+@use '../components/cards';
+@use '../components/buttons';
+
+.portada {
+    margin: 0;
+}
+.portada img {
+    @extend %img-default;
+    height: 450px;
+    margin-top: 5px;
+}
+.card-img-overlay {
+    top:30px;
+    left:0px;
+    @include mixins.flexbox (flex-start, flex-start, column, 1.5rem);
+    height: 140%;
+    pointer-events: none;
+    margin-left: 0px;
+}
+.portada h2 {
+    @include mixins.titulos (1.5rem, 10px 10px 0px 0px);
+}
+.portada p {
+    @include mixins.parrafos (1.2rem, 0px);
+}
+
+.articulos-inicio h3 {
+    @include mixins.titulos (1.5rem, 0);
+    text-transform: uppercase;
+}
+.articulos-inicio h4 {
+    @include cards.title-cards (1.2rem);
+    text-transform:uppercase;
+}
+.articulos-inicio p {
+    @include cards.text-cards (1rem, 0px);
+}
+.ver-mas {
+    display: inline-block;
+    @include buttons.boton-estilo-vermas (rgb(34, 33, 33), transparent, 0px);
+    font-size: 0.8px;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+.card-img {
+    @extend %img-default;
+    margin-bottom: 15px;
+}
+
+.foto-340 {
+    height: 340px;
+}
+.lastsection-inicio {
+    background-color: lightgray;
+    color: variables.$color-black;
+}
+h5 {
+    @include mixins.titulos (1.5rem, 0px);
+}
+.mi-foto {
+    width: 200px;
+    height: 200px;
+}
+.mi-historia-inicio {
+    @include mixins.flexbox (center, center, row, 5px);
+    margin: 20px;
+}
+.mi-historia-inicio p {
+    @include mixins.parrafos (1.2rem, 10px);
+    text-align: justify;
+}
+.mi-historia-inicio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.mi-historia-inicio h5 {
+    @include mixins.titulos (1.5rem, -15px 0px 0px 0px);
+    text-align: center;
+}
+
+// Mobile Responsive
+@media (max-width: 768px) {
+    .portada h2 {
+        @include mixins.titulos (1.5rem, 0px 0px 10px 0px);
+    }
+    .portada p {
+        @include mixins.parrafos (2rem, 20px 0px 0px 30px);
+    }
+    .card-img {
+        @extend %img-default-mobile;
+    }
+    .card-img-overlay {
+        top:0px;
+        left:0px;
+        @include mixins.flexbox (center, center, column, 1.5rem);
+        height: 140%;
+        pointer-events: none;
+        margin-left: 0px;
+    }
+    
+    .articulos-inicio, 
+    .card-body {
+        border-bottom: 1px solid lightgrey;
+    }
+    .card-title {
+        @include cards.title-cards (1.2rem);
+    }
+    .card-text {
+        @include cards.text-cards (1rem, 0px 0px 10px 0px)
+    }
+    h3 {
+        @include mixins.titulos (1rem, 15px 0px 0px 0px);
+    }
+    .card-img {
+        @extend %img-default-mobile;
+        margin-bottom: 15px;
+    }
+    
+    .mi-historia-inicio {
+        @include mixins.flexbox (center, center, column, 5px);
+        margin: 20px;
+    }
+    .mi-historia-inicio p {
+        @include mixins.parrafos (1.2rem, 10px);
+        text-align: justify;
+    }
+    .mi-historia-inicio img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+    }
+    .mi-historia-inicio h5 {
+        @include mixins.titulos (1.5rem, -15px 0px 0px 0px);
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,43 @@
+@use "../utilities/variables";
+
+@mixin titulos ($size, $margin) {
+    font-family: variables.$tipografia-principal;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: $size;
+    margin: $margin;
+    line-height: 1.5;
+    color: variables.$color-black;
+}
+@mixin parrafos ($size, $margin) {
+    font-family: variables.$tipografia-secundaria;
+    font-weight: 400;
+    font-style: normal;
+    color: variables.$color-black;
+    font-size: $size;
+    margin: $margin;
+}
+
+// Header
+@mixin flexbox($justify, $align, $direction, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+// Index
+%img-default {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    %img-default-mobile {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
