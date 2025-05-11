@@ -3,81 +3,67 @@
 @use '../utilities/variables';
 @use '../components/cards';
  
-.hprincipal-guia h2 {
-    @include mixins.titulos (2rem, 0px);
-}
-.hprincipal-guia p {
-    @include mixins.parrafos (1.2rem, 10px 50px);
+.hprincipal-guia {
+    h2 { @include mixins.titulos (2rem, 0px);}
+    p { @include mixins.parrafos (1.2rem, 10px 50px);}
 }
 
 .card-guia {
     margin: 0px 50px;
-}
-.card-guia img {
-    height: 400px;
- }
-.card-guia h5 {
-    @include cards.title-cards (1.5rem);
-}
-.card-guia p {
-    @include cards.text-cards (1rem, 0px);
-    text-align: justify
+    img {height: 400px;}
+    h5 {@include cards.title-cards (1.5rem);}
+    p {@include cards.text-cards (1rem, 0px);
+        text-align: justify;}
 }
 
  .articles-guia {
     @include mixins.flexbox (center, center, column, 0px);
+    h5 {margin:0px;}
     h3 { @include mixins.titulos (1.5rem, 0);
         text-transform: uppercase;}
     p { @include mixins.parrafos (1rem, 0px);
         text-align: justify;}
+    .flex-articles {
+        @include mixins.flexbox (center, center, column, 20px);
+        img { width: 250px;
+        height: auto;}
     }
- .flex-articles {
-    @include mixins.flexbox (center, center, column, 20px);
- }
- .flex-articles img {
-    width:250px;
-    height: auto;
- }
- .articulo {
-    @include mixins.flexbox (space-between, center, row-reverse, 20px);
- }
- .articulo-reverse {
-    @include mixins.flexbox (space-between, center, row, 20px);
- }
+    .articulo { @include mixins.flexbox (space-between, center, row-reverse, 20px);}
+    .articulo-reverse { @include mixins.flexbox (space-between, center, row, 20px);}
+    .articulo2 {margin-top: 0px;}
+}
  
  
  // Mobile Responsive
 @media (max-width: 768px) {
-    .hprincipal-guia h2 {
-        @include mixins.titulos (1.5rem, 0px);
+    .hprincipal-guia {
+        h2 { @include mixins.titulos (1.2rem, 0px);}
+        p { @include mixins.parrafos (1rem, 15px);
+            padding: 5px;
+            text-align: justify;}
     }
-    .hprincipal-guia p {
-        @include mixins.parrafos (1.2rem, 2rem);
-        text-align: justify;
+    .card-guia {
+        margin: 10px;
+        img {width:250px;
+            height: auto;}
+        .card-body h5 {@include cards.title-cards (1.2rem);
+                    line-height: 1.5;}
+        p {@include cards.text-cards (1rem, 0px);}
     }
-    .card-guia img {
-        @extend %img-default-mobile;
+    .articles-guia {
+        .flex-articles { @include mixins.flexbox (center, center, column, 30px);
+            width: 100%;
+            img {@extend %img-default-mobile;
+                max-width: 230px;}
+            }
+        @include mixins.flexbox (center, center, column, 0px);
+        h3 { @include mixins.titulos (1rem, 15px 0px 0px 0px);
+            text-transform: uppercase;}
+        h5 { @include mixins.titulos (1rem, 0px 5px 0px 5px);
+            text-transform: uppercase;}
+        p { @include mixins.parrafos (1rem, 15px);
+            text-align: justify;
+        margin: 5px;}
+        .articulo-reverse, .articulo { @include mixins.flexbox (center, center, column-reverse, 0px);}
     }
-    .card-guia .card-body h5 {
-        @include cards.title-cards (1.2rem);
-        line-height: 2;
-    }
-    .card-guia p {
-        @include cards.text-cards (1rem, 0px);
-    }
-    .articulo-reverse,
-    .articulo {
-        @include mixins.flexbox (center, center, column-reverse,0px)
-   }
-   .flex-articles img {
-    @extend %img-default-mobile;
-    max-width: 300px;
-    }
-    .texto-articulo {
-        @include mixins.parrafos (1rem, 0px);
-        text-align: justify;
-    }
-    .titulo-articulo {
-        line-height: 2;
-    }
- }
+}

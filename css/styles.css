@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  .card-guia img, .flex-articles img, .card-ultimo-articulo img, .body-blog img, .mi-historia img, .portada img, .card-img {
+  .articles-guia .flex-articles img, .card-ultimo-articulo img, .body-blog img, .mi-historia img, .portada img, .card-img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -100,6 +100,7 @@ p {
   color: black;
   font-size: 2rem;
   margin: 0px;
+  text-align: justify;
 }
 
 .ver-mas {
@@ -109,6 +110,7 @@ p {
   color: black;
   font-size: 0.8rem;
   margin: 0;
+  text-align: justify;
   text-decoration: underline;
   color: rgb(51, 50, 50);
 }
@@ -156,6 +158,7 @@ p {
   color: black;
   font-size: 1.5rem;
   margin: 0px;
+  text-align: justify;
 }
 .menu-contenedor form {
   display: flex;
@@ -186,6 +189,7 @@ p {
   color: black;
   font-size: 1.7rem;
   margin: 0;
+  text-align: justify;
   text-transform: uppercase;
 }
 
@@ -214,6 +218,7 @@ nav ul li {
   color: black;
   font-size: 1rem;
   margin: 0px 3rem;
+  text-align: justify;
   text-transform: uppercase;
 }
 
@@ -311,6 +316,7 @@ a {
   color: black;
   font-size: 1.2rem;
   margin: 0px;
+  text-align: justify;
 }
 
 .articulos-inicio h3 {
@@ -404,6 +410,7 @@ h5 {
   font-size: 1rem;
   margin: 0px;
   text-align: justify;
+  text-align: justify;
 }
 
 .mi-historia-inicio img {
@@ -448,6 +455,7 @@ h5 {
     color: black;
     font-size: 1rem;
     margin: 0px;
+    text-align: justify;
   }
   .card-img-overlay {
     top: 0px;
@@ -510,6 +518,7 @@ h5 {
     color: black;
     font-size: 1rem;
     margin: 0px;
+    text-align: justify;
     padding: 10px;
     text-align: justify;
   }
@@ -549,6 +558,7 @@ h5 {
   color: black;
   font-size: 1.5rem;
   margin: 0px;
+  text-align: justify;
 }
 
 .contacto-contenedor h3 {
@@ -634,6 +644,7 @@ h5 {
   color: black;
   font-size: 2rem;
   margin: 10px 100px 10px 100px;
+  text-align: justify;
 }
 
 .titulo-galeria {
@@ -714,6 +725,7 @@ h5 {
   color: black;
   font-size: 1.5rem;
   margin: 0px;
+  text-align: justify;
   text-align: center;
 }
 
@@ -737,6 +749,7 @@ h5 {
     color: black;
     font-size: 1rem;
     margin: 0px 15px 15px 15px;
+    text-align: justify;
     text-align: justify;
   }
   .grid-xestados {
@@ -838,6 +851,7 @@ h5 {
   font-size: 1rem;
   margin: 0px;
   text-align: justify;
+  text-align: justify;
 }
 
 .hprincipal-guia h2 {
@@ -850,7 +864,6 @@ h5 {
   line-height: 1.5;
   color: black;
 }
-
 .hprincipal-guia p {
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
@@ -858,16 +871,15 @@ h5 {
   color: black;
   font-size: 1.2rem;
   margin: 10px 50px;
+  text-align: justify;
 }
 
 .card-guia {
   margin: 0px 50px;
 }
-
 .card-guia img {
   height: 400px;
 }
-
 .card-guia h5 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
@@ -878,7 +890,6 @@ h5 {
   line-height: 1.5;
   color: black;
 }
-
 .card-guia p {
   font-size: 1rem;
   color: black;
@@ -892,6 +903,9 @@ h5 {
   align-items: center;
   flex-direction: column;
   gap: 0px;
+}
+.articles-guia h5 {
+  margin: 0px;
 }
 .articles-guia h3 {
   font-family: "Boldonse", system-ui;
@@ -912,35 +926,35 @@ h5 {
   font-size: 1rem;
   margin: 0px;
   text-align: justify;
+  text-align: justify;
 }
-
-.flex-articles {
+.articles-guia .flex-articles {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
-
-.flex-articles img {
+.articles-guia .flex-articles img {
   width: 250px;
   height: auto;
 }
-
-.articulo {
+.articles-guia .articulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
   gap: 20px;
 }
-
-.articulo-reverse {
+.articles-guia .articulo-reverse {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   gap: 20px;
+}
+.articles-guia .articulo2 {
+  margin-top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -949,7 +963,7 @@ h5 {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0px;
     line-height: 1.5;
     color: black;
@@ -959,9 +973,18 @@ h5 {
     font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 1.2rem;
-    margin: 2rem;
+    font-size: 1rem;
+    margin: 15px;
     text-align: justify;
+    padding: 5px;
+    text-align: justify;
+  }
+  .card-guia {
+    margin: 10px;
+  }
+  .card-guia img {
+    width: 250px;
+    height: auto;
   }
   .card-guia .card-body h5 {
     font-family: "Boldonse", system-ui;
@@ -972,35 +995,70 @@ h5 {
     margin: 0px;
     line-height: 1.5;
     color: black;
-    line-height: 2;
+    line-height: 1.5;
   }
   .card-guia p {
     font-size: 1rem;
     color: black;
     margin: 0px;
   }
-  .articulo-reverse,
-  .articulo {
+  .articles-guia {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0px;
   }
-  .flex-articles img {
-    max-width: 300px;
+  .articles-guia .flex-articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
   }
-  .texto-articulo {
+  .articles-guia .flex-articles img {
+    max-width: 230px;
+  }
+  .articles-guia h3 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 15px 0px 0px 0px;
+    line-height: 1.5;
+    color: black;
+    text-transform: uppercase;
+  }
+  .articles-guia h5 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0px 5px 0px 5px;
+    line-height: 1.5;
+    color: black;
+    text-transform: uppercase;
+  }
+  .articles-guia p {
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
     font-size: 1rem;
-    margin: 0px;
+    margin: 15px;
     text-align: justify;
+    text-align: justify;
+    margin: 5px;
   }
-  .titulo-articulo {
-    line-height: 2;
+  .articles-guia .articulo-reverse, .articles-guia .articulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0px;
   }
 }
 .footer-contenedor {
