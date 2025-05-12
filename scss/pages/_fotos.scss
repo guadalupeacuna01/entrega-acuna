@@ -40,7 +40,7 @@ h2 {
     "tas-fotos tas-fotos tas-fotos";
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
  }
 $estados: (
     nsw: nsw-fotos,
@@ -59,13 +59,19 @@ $estados: (
 }
 
 .grid-xestados img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     flex-shrink: 0;
     margin: 10px;
 } 
+.grid-xestados h4 {
+    display: none;
+  }
+.grid-xestados > div {
+    display: contents;
+  }
 
 // Mobile Responsive
 @media (max-width: 768px) {

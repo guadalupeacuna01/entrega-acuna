@@ -780,7 +780,7 @@ h2 {
   grid-template-areas: "nsw-fotos nsw-fotos nsw-fotos" "qld-fotos qld-fotos qld-fotos" "vic-fotos vic-fotos vic-fotos" "sa-fotos sa-fotos sa-fotos" "nt-fotos nt-fotos nt-fotos" "wa-fotos wa-fotos wa-fotos" "tas-fotos tas-fotos tas-fotos";
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .nsw-fotos {
@@ -812,12 +812,20 @@ h2 {
 }
 
 .grid-xestados img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
   margin: 10px;
+}
+
+.grid-xestados h4 {
+  display: none;
+}
+
+.grid-xestados > div {
+  display: contents;
 }
 
 @media (max-width: 768px) {
