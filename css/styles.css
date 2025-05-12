@@ -319,10 +319,28 @@ a {
 .portada {
   margin: 0;
 }
-
 .portada img {
   height: 450px;
   margin-top: 5px;
+}
+.portada h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 10px 10px 0px 0px;
+  line-height: 1.5;
+  color: black;
+}
+.portada p {
+  font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1.2rem;
+  margin: 0px;
+  text-align: justify;
 }
 
 .card-img-overlay {
@@ -336,27 +354,6 @@ a {
   height: 140%;
   pointer-events: none;
   margin-left: 0px;
-}
-
-.portada h2 {
-  font-family: "Boldonse", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  margin: 10px 10px 0px 0px;
-  line-height: 1.5;
-  color: black;
-}
-
-.portada p {
-  font-family: "Special Gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  font-size: 1.2rem;
-  margin: 0px;
-  text-align: justify;
 }
 
 .articulos-inicio h3 {
@@ -414,8 +411,7 @@ a {
   background-color: lightgray;
   color: black;
 }
-
-h5 {
+.lastsection-inicio h5 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -519,11 +515,6 @@ h5 {
     color: black;
     font-size: 1rem;
   }
-  .card-text {
-    font-size: 1rem;
-    color: black;
-    margin: 0px 0px 10px 0px;
-  }
   .articulos-inicio h3 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
@@ -534,6 +525,11 @@ h5 {
     line-height: 1.5;
     color: black;
     white-space: nowrap;
+  }
+  .card-text {
+    font-size: 1rem;
+    color: black;
+    margin: 0px 0px 10px 0px;
   }
   .card-img {
     margin-bottom: 10px;
@@ -640,6 +636,14 @@ h2 {
   font-size: 1rem;
   margin: 0;
   text-align: justify;
+}
+
+.p-contacto {
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 @media (max-width: 768px) {

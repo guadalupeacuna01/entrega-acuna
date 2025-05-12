@@ -22,6 +22,9 @@ h2 {
         label {@include mixins.parrafos (1rem,0);}
         }
 }
+.p-contacto {
+    @include mixins.flexbox (justify, center, column, 5px);
+}
 
 
  // Mobile Responsive
