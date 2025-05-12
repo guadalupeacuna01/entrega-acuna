@@ -12,7 +12,8 @@
     p {@include mixins.parrafos (1rem, 0px);}
     img {@extend %img-default;
         height:260px}
-    max-width: 740px;
+        max-width: 740px;
+    a {text-decoration: underline;}
 }
 
 .body-blog {
@@ -21,6 +22,7 @@
     grid-area: 
     "body-blog-izquierda body-blog-derecha";
     gap: 10px;
+    a {text-decoration: underline;}
 }
 .body-blog-izquierda {
     grid-area: "body-blog-izquierda"; 

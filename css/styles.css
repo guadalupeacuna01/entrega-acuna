@@ -902,12 +902,18 @@ h2 {
 .card-ultimo-articulo img {
   height: 260px;
 }
+.card-ultimo-articulo a {
+  text-decoration: underline;
+}
 
 .body-blog {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-area: "body-blog-izquierda body-blog-derecha";
   gap: 10px;
+}
+.body-blog a {
+  text-decoration: underline;
 }
 
 .body-blog-izquierda {
@@ -1075,6 +1081,14 @@ h2 {
   gap: 0px;
 }
 .articles-guia h5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  color: black;
   margin: 0px;
 }
 .articles-guia h3 {
@@ -1097,6 +1111,9 @@ h2 {
   margin: 0px;
   text-align: justify;
   text-align: justify;
+}
+.articles-guia a {
+  text-decoration: underline;
 }
 .articles-guia .flex-articles {
   display: flex;
@@ -1144,9 +1161,9 @@ h2 {
     font-style: normal;
     color: black;
     font-size: 1rem;
-    margin: 15px;
+    margin: 10px;
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
     text-align: justify;
   }
   .card-guia {
