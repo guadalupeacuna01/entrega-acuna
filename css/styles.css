@@ -383,6 +383,9 @@ a {
   color: black;
   margin: 0px;
 }
+.articulos-inicio a {
+  text-decoration: underline;
+}
 
 .ver-mas {
   display: inline-block;
