@@ -15,5 +15,8 @@
     "url": "https://github.com/guadalupeacuna01/entrega-acuna/issues"
   },
   "homepage": "https://github.com/guadalupeacuna01/entrega-acuna#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

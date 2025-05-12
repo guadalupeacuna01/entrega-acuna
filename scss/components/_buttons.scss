@@ -16,6 +16,7 @@
       background-color: $color;
       color: white;
     }
+    &:hover { animation: bounce;}
 }
 
 // Boton Buscar y Menu en header
