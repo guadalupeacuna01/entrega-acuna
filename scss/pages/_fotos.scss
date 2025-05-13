@@ -12,9 +12,10 @@ h2 {
 .titulo-galeria {
     @include mixins.flexbox (center, center, column, 10px);
     h3 { @include mixins.titulos (1.5rem, 0px);}
-     p { @include mixins.parrafos (1rem, 10px 100px 10px 100px);}
+    p { @include mixins.parrafos (1rem, 10px 100px 10px 100px);}
     img { width: 20px;
-    height: 20px;}
+        height: 20px;}
+    a {text-decoration: underline}
 }
 .galeria-fotos {
     //@include mixins.flexbox (center, center, row, 10px);

@@ -758,6 +758,9 @@ h2 {
   width: 20px;
   height: 20px;
 }
+.titulo-galeria a {
+  text-decoration: underline;
+}
 
 .galeria-fotos h4 {
   font-family: "Special Gothic", sans-serif;
