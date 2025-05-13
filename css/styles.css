@@ -1,3 +1,4 @@
+@import "~animate.css/animate.css";
 * {
   margin: 0;
   padding: 0;
@@ -146,6 +147,9 @@ p {
 .ver-mas:hover, .ver-mas:focus {
   text-decoration: underline;
 }
+.ver-mas:hover {
+  animation: pulse 1s;
+}
 
 .encabezado-contenedor {
   width: 100%;
@@ -217,6 +221,23 @@ p {
   align-items: center;
 }
 
+.link-boton {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.link-boton:hover, .link-boton:focus {
+  background-color: black;
+  color: white;
+}
+.link-boton:hover {
+  animation: pulse 1s;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -225,7 +246,6 @@ nav ul {
   flex-direction: row;
   gap: 0;
 }
-
 nav ul li {
   font-family: "Special Gothic", sans-serif;
   font-weight: 400;
@@ -258,9 +278,6 @@ a {
   background-color: black;
   color: white;
 }
-.link-boton:hover {
-  animation: bounce;
-}
 
 .boton-active {
   border: none;
@@ -269,14 +286,6 @@ a {
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.boton-active:hover, .boton-active:focus {
-  background-color: white;
-  color: white;
-}
-.boton-active:hover {
-  animation: bounce;
 }
 
 @media (max-width: 768px) {

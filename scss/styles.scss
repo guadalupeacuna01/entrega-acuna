@@ -2,6 +2,7 @@
 @use "base/typography";
 @use "utilities/variables";
 @use "utilities/mixins";
+@use "components/buttons";
 @use "layout/header";
 @use "pages/index";
 @use "pages/contacto";
@@ -9,6 +10,8 @@
 @use "pages/blog";
 @use "pages/guia";
 @use "layout/footer";
+
+@import "~animate.css/animate.css";
 
 
 body {

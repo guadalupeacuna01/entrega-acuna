@@ -16,7 +16,16 @@
       background-color: $color;
       color: white;
     }
-    &:hover { animation: bounce;}
+}
+
+// Boton cuando esta seleccionada la pagina
+@mixin boton-estilo-active {
+  border: none;
+  background-color: variables.$color-black;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 // Boton Buscar y Menu en header
@@ -54,4 +63,5 @@
   &:focus {
       text-decoration: underline;
   }
+    &:hover { animation: pulse 1s;}
 }
