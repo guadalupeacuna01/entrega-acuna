@@ -594,6 +594,14 @@ h2 {
   color: black;
 }
 
+.instagram:hover {
+  animation: pulse 1s;
+}
+
+.tiktok:hover {
+  animation: pulse 1s;
+}
+
 .mi-historia {
   display: flex;
   justify-content: center;
@@ -1269,23 +1277,37 @@ h2 {
 }
 .footer-contenedor {
   width: 100%;
-  margin-top: 25px;
-  margin-top: 10px;
-}
-
-.footer-inicio .barra-navegacion {
+  padding: 10px;
   color: black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer-img a {
+  display: inline-block;
+}
+.footer-img img {
+  width: 30px;
+  height: 30px;
+}
+.footer-img .instagram:hover {
+  animation: pulse 1s;
+}
+.footer-img .tiktok:hover {
+  animation: pulse 1s;
+}
+
 @media (max-width: 768px) {
-  .footer-contenedor .footer-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 0px;
+  .footer-img img {
+    width: 20px;
+    height: 20px;
   }
 }
 body {

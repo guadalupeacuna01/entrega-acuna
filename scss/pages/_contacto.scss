@@ -5,6 +5,13 @@
 h2 {
     @include mixins.titulos (1.5rem, 0px);
 }
+.instagram {
+    &:hover { animation: pulse 1s;}
+}
+.tiktok {
+    &:hover { animation: pulse 1s;}
+}
+
 .mi-historia {
     @include mixins.flexbox (center, center, row, 30px);
     margin: 10px 200px 50px 200px;
