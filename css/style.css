@@ -220,6 +220,28 @@ p {
   align-items: center;
 }
 
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+}
+.redes a {
+  display: inline-block;
+  margin: 10px;
+}
+.redes a img {
+  width: 30px;
+  height: 30px;
+}
+.redes .instagram:hover {
+  animation: pulse 1s;
+}
+.redes .tiktok:hover {
+  animation: pulse 1s;
+}
+
 .link-boton {
   border: none;
   background-color: transparent;
