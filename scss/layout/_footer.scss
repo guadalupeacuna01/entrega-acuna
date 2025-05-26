@@ -12,21 +12,33 @@
 
 .footer-img {
     @include mixins.flexbox (center, center, row, 20px);
-    a { display: inline-block;}
-    img { width: 30px;
-        height:30px;}
+    a { 
+        display: inline-block;
+    }
+    img { 
+        width: 30px;
+        height:30px;
+    }
     .instagram {
-        &:hover { animation: pulse 1s;}}
+        &:hover { 
+            animation: pulse 1s;
+        }
+    }
     .tiktok {
-        &:hover { animation: pulse 1s;}}
+        &:hover { 
+            animation: pulse 1s;
+        }
+    }
     }
 
 
 // Mobile Responsive
 @media (max-width: 768px) {
   .footer-img {
-      img { width:20px;
-        height: 20px;}
+      img { 
+        width:20px;
+        height: 20px;
+    }
     }
 }
  

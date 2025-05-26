@@ -8,12 +8,20 @@
     @include mixins.titulos (2rem, 0px);
 }
 .card-ultimo-articulo {
-    h3 {@include mixins.titulos (1.2rem, 0px);}
-    p {@include mixins.parrafos (1rem, 0px);}
-    img {@extend %img-default;
-        height:260px}
+    h3 {
+        @include mixins.titulos (1.2rem, 0px);
+    }
+    p {
+        @include mixins.parrafos (1rem, 0px);
+    }
+    img {
+        @extend %img-default;
+        height:260px
+    }
         max-width: 740px;
-    a {text-decoration: underline;}
+    a {
+        text-decoration: underline;
+    }
 }
 
 .body-blog {
@@ -26,14 +34,24 @@
 }
 .body-blog-izquierda {
     grid-area: "body-blog-izquierda"; 
-    h4 {@include mixins.titulos (1.5rem, 0px);}
-    p {@include mixins.parrafos (1rem, 10px 0px 5px 0px);}
+    h4 {
+        @include mixins.titulos (1.5rem, 0px);
+    }
+    p {
+        @include mixins.parrafos (1rem, 10px 0px 5px 0px);
+    }
 }
 .body-blog-derecha {
     grid-area: "body-blog-derecha";
-    .card { width: 20rem;}
-    p { @include mixins.parrafos (1rem, 10px 0px 5px 0px);}
-    h5 { @include mixins.titulos (1.2rem, 0);}
+    .card { 
+        width: 20rem;
+    }
+    p { 
+        @include mixins.parrafos (1rem, 10px 0px 5px 0px);
+    }
+    h5 { 
+        @include mixins.titulos (1.2rem, 0);
+    }
 }
 
  // Mobile Responsive
@@ -42,24 +60,38 @@
         @include mixins.titulos (1.5rem, 10px);
     }
     .card-ultimo-articulo {
-        img {@extend %img-default-mobile;
-        height: 200px;}
-        h5 {@include mixins.titulos (1.2rem, 0px);
-        line-height: 2;}
-        p { @include mixins.parrafos (1rem, 0);}
+        img {
+            @extend %img-default-mobile;
+            height: 200px;
+        }
+        h3 {
+            @include mixins.titulos (1.2rem, 0px);
+            line-height: 2;
+        }
+        p { 
+            @include mixins.parrafos (1rem, 0);
+        }
     }
     .body-blog {
         display: block;
-        img { @extend %img-default-mobile;}
-        .body-blog-derecha { margin: 0;
-            padding: 1rem;}
+        img {
+            @extend %img-default-mobile;
+        }
+        .body-blog-derecha { 
+            margin: 0;
+            padding: 1rem;
+        }
     }
     .body-blog-derecha .card {
         width: 100%;
     }
     .body-blog-izquierda {
-        h5 { @include mixins.titulos (1.2rem, 0px);
-        line-height: 2;}
-        p { @include mixins.parrafos (1rem, 0px 0px 5px 0px);}
+        h4 { 
+            @include mixins.titulos (1.2rem, 0px);
+            line-height: 2;
+        }
+        p { 
+            @include mixins.parrafos (1rem, 0px 0px 5px 0px);
+        }
     }
 }

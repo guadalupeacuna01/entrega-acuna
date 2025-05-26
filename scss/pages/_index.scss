@@ -6,11 +6,17 @@
 
 .portada {
     margin: 0;
-    img {@extend %img-default;
+    img {
+        @extend %img-default;
         height: 450px;
-        margin-top: 5px;}
-        h2 { @include mixins.titulos (1.5rem, 10px 10px 0px 0px);}
-        p { @include mixins.parrafos (1.2rem, 0px);}
+        margin-top: 5px;
+    }
+        h2 { 
+            @include mixins.titulos (1.5rem, 10px 10px 0px 0px);
+        }
+        p { 
+            @include mixins.parrafos (1.2rem, 0px);
+        }
 }
 
 .card-img-overlay {
@@ -23,12 +29,20 @@
 }
 
 .articulos-inicio {
-    h3 { @include mixins.titulos (1.5rem, 0);
-        text-transform: uppercase;}
-    h4 {@include cards.title-cards (1.2rem);
-        text-transform:uppercase;}
-    p { @include cards.text-cards (1rem, 0px);}
-    a {text-decoration: underline;}
+    h3 { 
+        @include mixins.titulos (1.5rem, 0);
+        text-transform: uppercase;
+    }
+    h4 {
+        @include cards.title-cards (1.2rem);
+        text-transform:uppercase;
+    }
+    p { 
+        @include cards.text-cards (1rem, 0px);
+    }
+    a {
+        text-decoration: underline;
+}
 }
 .ver-mas {
     display: inline-block;
@@ -50,7 +64,9 @@
 .lastsection-inicio {
     background-color: lightgray;
     color: variables.$color-black;
-    h5 { @include mixins.titulos (1.5rem, 0px);}
+    h5 { 
+        @include mixins.titulos (1.5rem, 0px);
+    }
 }
 
 .mi-foto {
@@ -60,25 +76,37 @@
 .mi-historia-inicio {
     @include mixins.flexbox (center, center, row, 30px);
     margin: 20px 300px 50px 300px;
-     p {@include mixins.parrafos (1rem, 0px);
-        text-align: justify;}
-    img {display: block;
+     p {
+        @include mixins.parrafos (1rem, 0px);
+        text-align: justify;
+    }
+    img {
+        display: block;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        height: auto;}
-    h5 {@include mixins.titulos (1.5rem, 0px);
-    text-align: center;}
+        height: auto;
+    }
+    h5 {
+        @include mixins.titulos (1.5rem, 0px);
+        text-align: center;
+    }
 }
 
 // Mobile Responsive
 @media (max-width: 768px) {
     .portada {
         margin: 0px;
-        img { @extend %img-default-mobile;}
-        h2 { @include mixins.titulos (1.5rem, 10px);
-            line-height: 1.5;}
-        p { @include mixins.parrafos (1rem, 0px);}
+        img { 
+            @extend %img-default-mobile;
+        }
+        h2 { 
+            @include mixins.titulos (1.5rem, 10px);
+            line-height: 1.5;
+        }
+        p { 
+            @include mixins.parrafos (1rem, 0px);
+        }
     }
     .card-img-overlay {
         top:0px;
@@ -91,11 +119,16 @@
     
     .articulos-inicio {
         .card-body {border-bottom: 1px solid lightgrey;
-            padding: 0px;}
-            h4 { @include cards.title-cards (1rem);
-                font-size: 1rem;} 
-            h3 {@include mixins.titulos (1rem, 15px 0px 0px 0px);
-                    white-space: nowrap;}
+            padding: 0px;
+        }
+            h4 { 
+                @include cards.title-cards (1rem);
+                font-size: 1rem;
+            } 
+            h3 {
+                @include mixins.titulos (1rem, 15px 0px 0px 0px);
+                    white-space: nowrap;
+                }
     }
     .card-text {
         @include cards.text-cards (1rem, 0px 0px 10px 0px)
@@ -108,15 +141,21 @@
     .mi-historia-inicio {
         @include mixins.flexbox (center, center, column, 5px);
         margin: 20px;
-        p { @include mixins.parrafos (1rem, 0px);
+        p { 
+            @include mixins.parrafos (1rem, 0px);
             padding: 10px;
-            text-align: justify;}
-        img { display: block;
+            text-align: justify;
+        }
+        img { 
+            display: block;
             margin-left: auto;
             margin-right: auto;
             width: 150px;
-            height: 150px;}
-        h5 { @include mixins.titulos (1.2rem, -15px 0px 0px 0px);
-            text-align: center;}
+            height: 150px;
+        }
+        h5 { 
+            @include mixins.titulos (1.2rem, -15px 0px 0px 0px);
+            text-align: center;
+        }
     }
 }

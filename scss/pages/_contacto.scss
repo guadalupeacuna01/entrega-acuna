@@ -6,28 +6,39 @@ h2 {
     @include mixins.titulos (1.5rem, 0px);
 }
 .instagram {
-    &:hover { animation: pulse 1s;}
+    &:hover { 
+        animation: pulse 1s;
+    }
 }
 .tiktok {
-    &:hover { animation: pulse 1s;}
+    &:hover { 
+        animation: pulse 1s;
+    }
 }
 
 .mi-historia {
     @include mixins.flexbox (center, center, row, 30px);
     margin: 10px 200px 50px 200px;
-    p { @include mixins.parrafos (1rem, 0);}
+    p { 
+        @include mixins.parrafos (1rem, 0);
+    }
 }
 .contacto-contenedor {
     background-color: lightgray;
     padding: 10px;
     margin: 50px;
-    h3 {@include mixins.titulos (1.2rem,0);
-        margin-bottom: 10px;}
-    .email-contenedor { width: 100%;
+    h3 {
+        @include mixins.titulos (1.2rem,0);
+        margin-bottom: 10px;
+    }
+    .email-contenedor { 
+        width: 100%;
         margin: 10px 200px 30px 200px;
         @include mixins.parrafos (1.5rem, 0px);
-        label {@include mixins.parrafos (1rem,0);}
+        label {
+            @include mixins.parrafos (1rem,0);
         }
+    }
 }
 .p-contacto {
     @include mixins.flexbox (justify, center, column, 5px);
@@ -38,10 +49,12 @@ h2 {
  @media (max-width: 768px) {
     .contacto-contenedor {
         margin: 5px;
-        h3 { @include mixins.titulos (1rem, 10px);}
+        h3 { 
+            @include mixins.titulos (1rem, 10px);}
         .email-contenedor {
             @include mixins.parrafos (1rem, 10px);
-            width: 90%;}
+            width: 90%;
+        }
     }
     .mi-historia {
         @include mixins.flexbox (center, center, column-reverse, 0px);
@@ -51,6 +64,8 @@ h2 {
             border-radius: 50% !important;
             width: 200px;
             height: 200px;}
-        p { @include mixins.parrafos (1rem, 0px);} 
+        p { 
+            @include mixins.parrafos (1rem, 0px);
+        } 
     }
 }

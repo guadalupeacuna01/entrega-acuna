@@ -44,28 +44,42 @@
 
 .redes {
     @include mixins.flexbox (center, center, row, 0px);
-    a { display: inline-block;
+    a { 
+        display: inline-block;
         margin: 10px;
-        img { width: 30px;
-            height: 30px;}}
+        img { 
+            width: 30px;
+            height: 30px;
+        }
+    }
             .instagram {
-                &:hover { animation: pulse 1s;}}
+                &:hover { 
+                    animation: pulse 1s;
+                }
+            }
             .tiktok {
-                &:hover { animation: pulse 1s;}}
+                &:hover { 
+                    animation: pulse 1s;
+                }
+            }
 }
 
 
 // Animate.css
 .link-boton {
     @include buttons.boton-estilo (black, transparent, 8px 16px);
-    &:hover { animation: pulse 1s;}
+    &:hover { 
+        animation: pulse 1s;
+    }
 }
 // nav
 nav ul {
     list-style: none;
     @include mixins.flexbox (space-between, center, row, 0);
-    li { @include mixins.parrafos (1rem, 0px 3rem);
-        text-transform: uppercase;}
+    li { 
+        @include mixins.parrafos (1rem, 0px 3rem);
+        text-transform: uppercase;
+    }
 }
 a {
     color: variables.$color-black;
@@ -87,10 +101,12 @@ a {
     }
     .barra-navegacion .container-fluid {
      @include mixins.flexbox (center, center, row, 25px);
-     a { @include mixins.parrafos (1rem, 0);
+     a { 
+        @include mixins.parrafos (1rem, 0);
         text-align: start;
         text-transform: uppercase;
-        white-space: nowrap;}
+        white-space: nowrap;
+    }
     }
     .titulo-mobile {
         display: none; // oculto en desktop
