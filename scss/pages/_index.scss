@@ -61,6 +61,14 @@
 .foto-340 {
     height: 340px;
 }
+
+// Para sacar el overflow de row
+.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
 .lastsection-inicio {
     background-color: lightgray;
     color: variables.$color-black;
