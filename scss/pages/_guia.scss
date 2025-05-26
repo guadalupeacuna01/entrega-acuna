@@ -11,7 +11,7 @@
 .card-guia {
     margin: 0px 50px;
     img {height: 400px;}
-    h5 {@include cards.title-cards (1.5rem);}
+    h3 {@include cards.title-cards (1.5rem);}
     p {@include cards.text-cards (1rem, 0px);
         text-align: justify;}
 }
@@ -20,7 +20,7 @@
     @include mixins.flexbox (center, center, column, 0px);
     h5 { @include mixins.titulos (1.2rem, 0);
         margin:0px;}
-    h3 { @include mixins.titulos (1.5rem, 0);
+    h4 { @include mixins.titulos (1.5rem, 0);
         text-transform: uppercase;}
     p { @include mixins.parrafos (1rem, 0px);
         text-align: justify;}

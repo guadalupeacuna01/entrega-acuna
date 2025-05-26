@@ -746,7 +746,7 @@ h2 {
   color: black;
 }
 
-.carrusel-principal h5 {
+.carrusel-principal h2 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -929,7 +929,7 @@ h2 {
 .card-ultimo-articulo {
   max-width: 740px;
 }
-.card-ultimo-articulo h5 {
+.card-ultimo-articulo h3 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -968,7 +968,7 @@ h2 {
 .body-blog-izquierda {
   grid-area: "body-blog-izquierda";
 }
-.body-blog-izquierda h5 {
+.body-blog-izquierda h4 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -1003,7 +1003,7 @@ h2 {
   margin: 10px 0px 5px 0px;
   text-align: justify;
 }
-.body-blog-derecha h3 {
+.body-blog-derecha h5 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -1105,7 +1105,7 @@ h2 {
 .card-guia img {
   height: 400px;
 }
-.card-guia h5 {
+.card-guia h3 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -1140,7 +1140,7 @@ h2 {
   color: black;
   margin: 0px;
 }
-.articles-guia h3 {
+.articles-guia h4 {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;

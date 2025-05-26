@@ -8,7 +8,7 @@
     @include mixins.titulos (2rem, 0px);
 }
 .card-ultimo-articulo {
-    h5 {@include mixins.titulos (1.2rem, 0px);}
+    h3 {@include mixins.titulos (1.2rem, 0px);}
     p {@include mixins.parrafos (1rem, 0px);}
     img {@extend %img-default;
         height:260px}
@@ -26,14 +26,14 @@
 }
 .body-blog-izquierda {
     grid-area: "body-blog-izquierda"; 
-    h5 {@include mixins.titulos (1.5rem, 0px);}
+    h4 {@include mixins.titulos (1.5rem, 0px);}
     p {@include mixins.parrafos (1rem, 10px 0px 5px 0px);}
 }
 .body-blog-derecha {
     grid-area: "body-blog-derecha";
     .card { width: 20rem;}
     p { @include mixins.parrafos (1rem, 10px 0px 5px 0px);}
-    h3 { @include mixins.titulos (1.2rem, 0);}
+    h5 { @include mixins.titulos (1.2rem, 0);}
 }
 
  // Mobile Responsive
