@@ -94,7 +94,7 @@
             width: 100%;
             img {
                 @extend %img-default-mobile;
-                max-width: 230px;
+ 
             }
             }
         @include mixins.flexbox (center, center, column, 0px);

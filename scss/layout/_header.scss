@@ -93,6 +93,7 @@ a {
 .boton-active {
     @include buttons.boton-estilo-active;
 }
+  
 
 // Mobile Responsive
 @media (max-width: 768px) {
@@ -100,7 +101,7 @@ a {
         display: none;
     }
     .barra-navegacion .container-fluid {
-     @include mixins.flexbox (center, center, row, 25px);
+     @include mixins.flexbox (flex-end, center, row, 25px);
      a { 
         @include mixins.parrafos (1rem, 0);
         text-align: start;
@@ -114,5 +115,12 @@ a {
         text-align: left;
         white-space: nowrap;
     }
-
+    nav ul {
+        li {
+            @include mixins.parrafos (1rem, 0px);
+            text-transform: uppercase;
+        }
+    }
 }
+
+  
