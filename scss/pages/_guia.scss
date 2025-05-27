@@ -115,6 +115,7 @@
         }
         .articulo-reverse, .articulo { 
             @include mixins.flexbox (center, center, column-reverse, 0px);
+            text-align: center;
         }
     }
 }

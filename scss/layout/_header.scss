@@ -100,14 +100,17 @@ a {
     .top-bar {
         display: none;
     }
-    .barra-navegacion .container-fluid {
-     @include mixins.flexbox (space-between, center, row, 25px);
-     a { 
-        @include mixins.parrafos (1rem, 0);
-        text-align: start;
-        text-transform: uppercase;
-        white-space: nowrap;
-    }
+    .barra-navegacion {
+            @include mixins.flexbox (space-around, center, row, 25px);
+        .container-fluid {
+            @include mixins.flexbox (space-around, center, row, 25px);
+        }
+        a { 
+            @include mixins.parrafos (1rem, 0);
+            text-align: start;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
     }
     .titulo-mobile {
         display: none; // oculto en desktop

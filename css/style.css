@@ -313,14 +313,21 @@ a {
   .top-bar {
     display: none;
   }
-  .barra-navegacion .container-fluid {
+  .barra-navegacion {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     gap: 25px;
   }
-  .barra-navegacion .container-fluid a {
+  .barra-navegacion .container-fluid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .barra-navegacion a {
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -551,7 +558,7 @@ a {
   .articulos-inicio .card-body {
     border-bottom: 1px solid lightgrey;
     padding: 0px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .articulos-inicio h4 {
     font-family: "Boldonse", system-ui;
@@ -1322,6 +1329,7 @@ h2 {
     align-items: center;
     flex-direction: column-reverse;
     gap: 0px;
+    text-align: center;
   }
 }
 .footer-contenedor {
