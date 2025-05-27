@@ -315,7 +315,7 @@ a {
   }
   .barra-navegacion .container-fluid {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     gap: 25px;
@@ -551,6 +551,7 @@ a {
   .articulos-inicio .card-body {
     border-bottom: 1px solid lightgrey;
     padding: 0px;
+    margin-top: 15px;
   }
   .articulos-inicio h4 {
     font-family: "Boldonse", system-ui;
@@ -1070,10 +1071,20 @@ h2 {
     margin: 0;
     padding: 1rem;
   }
-  .body-blog-derecha .card {
+  .body-blog .body-blog-derecha h5 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0px;
+    line-height: 1.5;
+    color: black;
+  }
+  .body-blog .body-blog-derecha .card {
     width: 100%;
   }
-  .body-blog-izquierda h4 {
+  .body-blog .body-blog-izquierda h4 {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -1084,7 +1095,7 @@ h2 {
     color: black;
     line-height: 2;
   }
-  .body-blog-izquierda p {
+  .body-blog .body-blog-izquierda p {
     font-family: "Special Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -1234,8 +1245,9 @@ h2 {
     margin: 10px;
   }
   .card-guia img {
-    width: 250px;
+    width: 100%;
     height: auto;
+    object-fit: cover;
   }
   .card-guia .card-body h3 {
     font-family: "Boldonse", system-ui;
@@ -1267,6 +1279,9 @@ h2 {
     flex-direction: column;
     gap: 30px;
     width: 100%;
+  }
+  .articles-guia .flex-articles img {
+    text-align: center;
   }
   .articles-guia h3 {
     font-family: "Boldonse", system-ui;

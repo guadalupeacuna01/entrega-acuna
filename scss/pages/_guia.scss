@@ -77,8 +77,9 @@
     .card-guia {
         margin: 10px;
         img {
-            width:250px;
+            width:100%;
             height: auto;
+            object-fit: cover;
         }
         .card-body h3 {
             @include cards.title-cards (1.2rem);
@@ -94,6 +95,7 @@
             width: 100%;
             img {
                 @extend %img-default-mobile;
+                text-align: center;
  
             }
             }

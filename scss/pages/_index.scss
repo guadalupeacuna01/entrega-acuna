@@ -128,6 +128,7 @@
     .articulos-inicio {
         .card-body {border-bottom: 1px solid lightgrey;
             padding: 0px;
+            margin-top: 15px;
         }
             h4 { 
                 @include cards.title-cards (1rem);

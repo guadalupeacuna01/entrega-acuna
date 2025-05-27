@@ -101,7 +101,7 @@ a {
         display: none;
     }
     .barra-navegacion .container-fluid {
-     @include mixins.flexbox (flex-end, center, row, 25px);
+     @include mixins.flexbox (space-between, center, row, 25px);
      a { 
         @include mixins.parrafos (1rem, 0);
         text-align: start;
